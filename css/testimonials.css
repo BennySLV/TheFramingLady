@@ -1,0 +1,7 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* Custom CSS for testimonials.html file */
+#testimonials-link {
+	font-weight: bold;
+}

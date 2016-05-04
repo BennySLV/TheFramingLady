@@ -1,0 +1,18 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* CSS associated with about.html file only */
+#about-link {
+	font-weight: bold;
+}
+
+#profile-pic {
+	float: right;
+	box-shadow: 4px 4px;
+	border-radius: 10px;
+	margin-left: 30px;
+}
+
+#youtube-video-intro {
+	float: right;
+}

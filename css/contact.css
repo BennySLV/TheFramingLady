@@ -1,0 +1,21 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* Custom CSS for contact.html file */
+#contact-link {
+	font-weight: bold;
+}
+
+#contact-form {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 3px 3px;
+}
+
+#contact-form-inner {
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #0080ff;
+}

@@ -1,0 +1,7 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* Custom CSS for portfolio.html file */
+#portfolio-link {
+	font-weight: bold;
+}
