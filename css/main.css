@@ -49,10 +49,6 @@ a:hover {
 	font-weight: bold;
 }
 
-input:focus {
-	background-color: yellow;
-}
-
 #main-text {
 	float: right;
 	padding-top: 150px; 
@@ -61,6 +57,19 @@ input:focus {
 #intro-text {
 	font-weight: bold;
 	padding-top: 15px;
+}
+
+#social-media a {
+	color: black;
+}
+
+#social-media a:hover {
+	color: rgba(122, 122, 122, 0.5)
+}
+
+#copyright {
+	float: left;
+	margin: bottom;
 }
 
 #credits {
