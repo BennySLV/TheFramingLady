@@ -20,7 +20,7 @@
 }
 
 #img-2, #img-4, #img-6 {
-	padding-left: 90px;
+	float: right;
 }
 
 #img-4, #img-6 {
