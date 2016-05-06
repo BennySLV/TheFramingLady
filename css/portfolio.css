@@ -11,6 +11,11 @@
 	filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
+.pic-info {
+	position: absolute;
+	padding: auto;
+}
+
 #img-1, #img-3, #img-5 {
 	float: left;
 }
