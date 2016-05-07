@@ -1,0 +1,34 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* Custom CSS for portfolio.html file */
+#portfolio-link {
+	font-weight: bold;
+}
+
+.image:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.pic-info {
+	position: absolute;
+	padding: auto;
+}
+
+#img-1, #img-3, #img-5 {
+	float: left;
+}
+
+#img-3, #img-5 {
+	padding-top: 50px;
+}
+
+#img-2, #img-4, #img-6 {
+	float: right;
+}
+
+#img-4, #img-6 {
+	padding-left: 90px;
+	padding-top: 50px;
+}

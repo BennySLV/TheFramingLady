@@ -1,0 +1,7 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* CSS associated with index.html file only */
+#index-link {
+	font-weight: bold;
+}
