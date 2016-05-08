@@ -17,13 +17,13 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/portfolio.css" />
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css" />
 
 	<!-- Custom JavaScript/jQuery -->
-	<script type="text/javascript" src="../js/portfolio.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
 
 	<!-- Site Icon -->
-	<link rel="icon" type="image/png" href="../images/web-images/site-icon.png">
+	<link rel="icon" type="image/png" href="images/web-images/site-icon.png">
 
 	<title>Portfolio | The Framing Lady</title>
 </head>
@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- Logo -->
-					<a href="index.php"><img src="../images/web-images/the-framing-lady-logo.jpg"></a>
+					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
 				</div>
 				<div class="col-sm-8">
 					<span id="slogan">Making Your Art Sing</span>
@@ -61,26 +61,26 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-1" src="../images/landscape/badminton-awards.jpg" /></a>
+					<a href="#"><img class="image" id="img-1" src="images/landscape/badminton-awards.jpg" /></a>
 				</div>
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-2" src="../images/landscape/childrens-shoes.jpg"  /></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-3" src="../images/landscape/grandad-darts.jpg" /></a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-4" src="../images/landscape/ship-captain.jpg"/></a>
+					<a href="#"><img class="image" id="img-2" src="images/landscape/childrens-shoes.jpg"  /></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-5" src="../images/landscape/medals.jpg" /></a>
+					<a href="#"><img class="image" id="img-3" src="images/landscape/grandad-darts.jpg" /></a>
 				</div>
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-6" src="../images/landscape/pebbles-frame.jpg" /></a>
+					<a href="#"><img class="image" id="img-4" src="images/landscape/ship-captain.jpg"/></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="#"><img class="image" id="img-5" src="images/landscape/medals.jpg" /></a>
+				</div>
+				<div class="col-sm-6">
+					<a href="#"><img class="image" id="img-6" src="images/landscape/pebbles-frame.jpg" /></a>
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->

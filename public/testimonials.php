@@ -17,13 +17,13 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/testimonials.css" />
+	<link rel="stylesheet" type="text/css" href="css/testimonials.css" />
 
 	<!-- Custom JavaScript/jQuery -->
-	<script type="text/javascript" src="../js/testimonials.js"></script>
+	<script type="text/javascript" src="js/testimonials.js"></script>
 
 	<!-- Site Icon -->
-	<link rel="icon" type="image/png" href="../images/web-images/site-icon.png">
+	<link rel="icon" type="image/png" href="images/web-images/site-icon.png">
 
 	<title>Testimonials | The Framing Lady</title>
 </head>
@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 				<!-- Logo -->
-					<a href="index.php"><img src="../images/web-images/the-framing-lady-logo.jpg"></a>
+					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
 				</div>
 				<div class="col-sm-8">
 					<span id="slogan">Making Your Art Sing</span>

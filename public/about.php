@@ -17,13 +17,13 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/about.css" />
+	<link rel="stylesheet" type="text/css" href="css/about.css" />
 
 	<!-- Custom JavaScript/jQuery -->
-	<script type="text/javascript" src="../js/about.js"></script>
+	<script type="text/javascript" src="js/about.js"></script>
 
 	<!-- Site Icon -->
-	<link rel="icon" type="image/png" href="../images/web-images/site-icon.png">
+	<link rel="icon" type="image/png" href="images/web-images/site-icon.png">
 	
 	<title>About | The Framing Lady</title>
 </head>
@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 				<!-- Logo -->
-					<a href="index.php"><img src="../images/web-images/the-framing-lady-logo.jpg"></a>
+					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
 				</div>
 				<div class="col-sm-8">
 					<span id="slogan">Making Your Art Sing</span>
@@ -55,7 +55,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 				<h1>The Framing Lady: Introduction</h1>					
-					<p id="intro-text">Hi! I'm Anne-Marie, a.k.a The Framing Lady!<img id="profile-pic" src="../images/web-images/the-framing-lady-profile-pic.jpg" /></p>
+					<p id="intro-text">Hi! I'm Anne-Marie, a.k.a The Framing Lady!<img id="profile-pic" src="images/web-images/the-framing-lady-profile-pic.jpg" /></p>
 					<p>Back in 2010, I discovered some old memorabilia that I wanted to preserve. However there was no way to properly preserve it in order to keep my prized posession. So I therefore started The Framing Lady to solve this constant issue.</p>
 					<p>My methods and approach are simple. The method is to choose the right mount with the right moulding to suit:
 					<ol>
