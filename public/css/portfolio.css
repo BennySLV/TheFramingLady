@@ -10,16 +10,24 @@ a:hover {
 	font-weight: normal;
 }
 
-.pic-info {
+.caption-title {
 	font-family: Crab;
 	font-size: 36px;
 	position: absolute;
 	bottom: 0px;
-	padding: 20px 50px 0px 50px;
+	padding-top: 165px;
+	padding-left: 120px;
 	width: 500px;
-	height: 100px;
+	height: 400px;
 	background-color: rgba(0, 0, 0, 0.3);
 	color: rgba(240, 240, 240, 0.75);	
+}
+
+.caption-description {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	padding: 50px;
+	color: rgba(240, 240, 240, 0.75);
 }
 
 #img-3, #img-4, #img-5, #img-6 {
