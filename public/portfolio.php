@@ -61,26 +61,26 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-1" src="images/landscape/badminton-awards.jpg" /></a>
+					<a href="#"><img id="img-1" src="images/landscape/badminton-awards.jpg" /><div class="pic-info">Badminton Awards 1992 - 2007</div></a>
 				</div>
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-2" src="images/landscape/childrens-shoes.jpg"  /></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-3" src="images/landscape/grandad-darts.jpg" /></a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-4" src="images/landscape/ship-captain.jpg"/></a>
+					<a href="#"><img id="img-2" src="images/landscape/childrens-shoes.jpg" /><div class="pic-info">Children's Shoes</div></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-5" src="images/landscape/medals.jpg" /></a>
+					<a href="#"><img id="img-3" src="images/landscape/grandad-darts.jpg" /><div class="pic-info">Grandad's Darts</div></a>
 				</div>
 				<div class="col-sm-6">
-					<a href="#"><img class="image" id="img-6" src="images/landscape/pebbles-frame.jpg" /></a>
+					<a href="#"><img id="img-4" src="images/landscape/ship-captain.jpg" /><div class="pic-info">Ship Admiral</div></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="#"><img id="img-5" src="images/landscape/medals.jpg" /><div class="pic-info">Medals</div></a>
+				</div>
+				<div class="col-sm-6">
+					<a href="#"><img id="img-6" src="images/landscape/pebbles-frame.jpg" /><div class="pic-info">Badges</div></a>
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->

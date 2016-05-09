@@ -3,13 +3,19 @@
 /* Master of Break custom font */
 @font-face {
     font-family: masterOfBreak;
-    src: url(../custom_fonts/master_of_break.ttf);    
+    src: url(custom_fonts/master_of_break.ttf);    
 }
 
 /* Allena Script custom font */
 @font-face {
 	font-family: Alleana Script;
-	src: url(../custom-fonts/Alleana Script.ttf)
+	src: url(custom-fonts/Alleana Script.ttf);
+}
+
+/* Crab Regular custom font */
+@font-face {
+	font-family: Crab;
+	src: url(custom-fonts/Crab.ttf);
 }
 
 /* Standard design for all computer desktop/laptop screens */
