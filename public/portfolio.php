@@ -13,6 +13,9 @@
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
+	<!-- jQuery-UI library -->
+	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
+
 	<!-- Latest compiled JavaScript for Bootstrap-->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -61,26 +64,26 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="#"><img id="img-1" src="images/landscape/badminton-awards.jpg" /><div class="pic-info">Badminton Awards 1992 - 2007</div></a>
+					<a href="#"><img id="img-1" src="images/landscape/badminton-awards.jpg" /><div id="img-1-caption"></div></a>
 				</div>
 				<div class="col-sm-6">
-					<a href="#"><img id="img-2" src="images/landscape/childrens-shoes.jpg" /><div class="pic-info">Children's Shoes</div></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<a href="#"><img id="img-3" src="images/landscape/grandad-darts.jpg" /><div class="pic-info">Grandad's Darts</div></a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#"><img id="img-4" src="images/landscape/ship-captain.jpg" /><div class="pic-info">Ship Admiral</div></a>
+					<a href="#"><img id="img-2" src="images/landscape/childrens-shoes.jpg" /><div id="img-2-caption"></div></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="#"><img id="img-5" src="images/landscape/medals.jpg" /><div class="pic-info">Medals</div></a>
+					<a href="#"><img id="img-3" src="images/landscape/grandad-darts.jpg" /><div id="img-3-caption"></div></a>
 				</div>
 				<div class="col-sm-6">
-					<a href="#"><img id="img-6" src="images/landscape/pebbles-frame.jpg" /><div class="pic-info">Badges</div></a>
+					<a href="#"><img id="img-4" src="images/landscape/ship-captain.jpg" /><div id="img-4-caption"></div></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="#"><img id="img-5" src="images/landscape/medals.jpg" /><div id="img-5-caption"></div></a>
+				</div>
+				<div class="col-sm-6">
+					<a href="#"><img id="img-6" src="images/landscape/pebbles-frame.jpg" /><div id="img-6-caption"></div></a>
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->

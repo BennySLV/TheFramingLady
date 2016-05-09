@@ -6,6 +6,10 @@
 	font-weight: bold;
 }
 
+a:hover {
+	font-weight: normal;
+}
+
 .pic-info {
 	font-family: Crab;
 	font-size: 36px;
