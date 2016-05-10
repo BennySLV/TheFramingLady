@@ -13,6 +13,9 @@
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
+	<!-- jQuery-UI library -->
+	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
+
 	<!-- Latest compiled JavaScript for Bootstrap -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
