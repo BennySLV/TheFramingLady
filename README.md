@@ -1,7 +1,5 @@
 <h2>Synopsis</h2>
 
-At the top of the file there should be a short introduction and/ or overview that explains what the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
-
 <p>This project is a prototype website for The Framing Lady. The website is designed using HTML, CSS and Bootstrap and will be developed using JavaScript/jQuery as well as OO PHP and MySQL.</p>
 
 <h2>Motivation</h2>
