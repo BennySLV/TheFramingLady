@@ -1,74 +1,68 @@
-/* JavaScript/jQuery for the porfolio page */
+/* JavaScript/jQuery for the portfolio page */
 $(function() {
 	// Show caption when user hovers over image
-	$('#img-1').on('mouseover', function() {
-		$('#img-1-caption-title').addClass('caption-title');
-		$('#img-1-caption-title').text('Badminton Awards 1992 - 2007');
+	$('#img-1').on('click', function() {
+		$('#img-1-text-description').addClass('description');
+		$('#img-1-text-description').slideDown('slow').load('custom-text/img-1-description.html');
 	});
 
 	// Remove caption when the user leaves the image
-	$('#img-1').on('mouseleave', function() {
-		$('#img-1-caption-title').removeClass('caption-title');
-		$('#img-1-caption-title').text('');
+	$('#img-1').on('dblclick', function() {
+		$('#img-1-text-description').slideUp('slow');		
 	});
 
 	// Show caption when user hovers over image
-	$('#img-2').on('mouseover', function() {
-		$('#img-2-caption-title').addClass('caption-title');
-		$('#img-2-caption-title').text('Children\'s shoes');
+	$('#img-2').on('click', function() {
+		$('#img-2-text-description').addClass('description');
+		$('#img-2-text-description').slideDown('slow').load('custom-text/img-2-description.html');
 	});
 
 	// Remove caption when the user leaves the image
-	$('#img-2').on('mouseleave', function() {
-		$('#img-2-caption-title').removeClass('caption-title');
-		$('#img-2-caption-title').text('');
+	$('#img-2').on('dblclick', function() {
+		$('#img-2-text-description').slideUp('slow');
 	});
 
 	// Show caption when user hovers over image
-	$('#img-3').on('mouseover', function() {
-		$('#img-3-caption-title').addClass('caption-title');
-		$('#img-3-caption-title').text('Grandad\'s Darts');
+	$('#img-3').on('click', function() {
+		$('#img-3-text-description').addClass('description');
+		$('#img-3-text-description').slideDown('slow').load('custom-text/img-3-description.html');
 	});
 
 	// Remove caption when the user leaves the image
-	$('#img-3').on('mouseleave', function() {
-		$('#img-3-caption-title').removeClass('caption-title');
-		$('#img-3-caption-title').text('');
+	$('#img-3').on('dblclick', function() {
+		$('#img-3-text-description').slideUp('slow');
 	});
 
 	// Show caption when user hovers over image
-	$('#img-4').on('mouseover', function() {
-		$('#img-4-caption-title').addClass('caption-title');
-		$('#img-4-caption-title').text('Ship Admiral');
+	$('#img-4').on('click', function() {
+		$('#img-4-text-description').addClass('description');
+		$('#img-4-text-description').slideDown('slow').load('custom-text/img-4-description.html');
 	});
 
 	// Remove caption when the user leaves the image
-	$('#img-4').on('mouseleave', function() {
-		$('#img-4-caption-title').removeClass('caption-title');
-		$('#img-4-caption-title').text('');
+	$('#img-4').on('dblclick', function() {
+		$('#img-4-text-description').slideUp('slow');
 	});
 
 	// Show caption when user hovers over image
-	$('#img-5').on('mouseover', function() {
-		$('#img-5-caption-title').addClass('caption-title');
-		$('#img-5-caption-title').text('Medals');
+	$('#img-5').on('click', function() {
+		$('#img-5-text-description').addClass('description');
+		$('#img-5-text-description').slideDown('slow').load('custom-text/img-5-description.html');
 	});
 
 	// Remove caption when the user leaves the image
-	$('#img-5').on('mouseleave', function() {
-		$('#img-5-caption-title').removeClass('caption-title');
-		$('#img-5-caption-title').text('');
+	$('#img-5').on('dblclick', function() {
+		$('#img-5-text-description').slideUp('slow');
 	});
 
 	// Show caption when user hovers over image
-	$('#img-6').on('mouseover', function() {
-		$('#img-6-caption-title').addClass('caption-title');
-		$('#img-6-caption-title').text('Badges');
+	$('#img-6').on('click', function() {
+		$('#img-6-text-description').addClass('description');
+		$('#img-6-text-description').slideDown('slow').load('custom-text/img-6-description.html');
 	});
 
 	// Remove caption when the user leaves the image
-	$('#img-6').on('mouseleave', function() {
-		$('#img-6-caption-title').removeClass('caption-title');
-		$('#img-6-caption-title').text('');
+	$('#img-6').on('dblclick', function() {
+		$('#img-6-text-description').slideUp('slow');
 	});
-});
+}); 
