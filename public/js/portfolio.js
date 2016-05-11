@@ -10,7 +10,7 @@ $(function() {
 	// Remove caption when the double-clicks on the image
 	$('.close-button').on('click', function() {
 		$('#img-1-text-description').slideUp('slow');
-		$('.close-button').removeAttr('close-button-1').text('');		
+		$('.close-button').removeClass('close-button-1').text('');		
 	});
 
 	// Show caption when user clicks on image
@@ -22,7 +22,7 @@ $(function() {
 	// Remove caption when the double-clicks on the image
 	$('.close-button').on('click', function() {
 		$('#img-2-text-description').slideUp('slow');
-		$('.close-button').removeAttr('close-button-2').text('');
+		$('.close-button').removeClass('close-button-2').text('');
 	});
 
 	// Show caption when user clicks on image
