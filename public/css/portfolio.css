@@ -51,6 +51,6 @@ a:hover {
 
 .fa, .fa-times {
 	float: right;
-	position: relative;
+	position: static;
 	background-color: rgba(0, 0, 0, 0.3);
 }
