@@ -60,7 +60,7 @@
 				<h1>About The Framing Lady</h1>					
 					<p id="intro-text">Hi! I'm Anne-Marie, a.k.a The Framing Lady!<img id="profile-pic" src="images/web-images/the-framing-lady-profile-pic.jpg" /></p>
 					<p>Back in 2010, I discovered some old memorabilia that I wanted to preserve. However there was no way to properly preserve it in order to keep my prized posession. So I therefore started The Framing Lady to solve this constant issue.</p>
-					<p>My methods and approach are simple. The method is to choose the right mount with the right moulding to suit:
+					<p>My methods and approach are simple. The method is to choose the right mount with the right moulding to suit. The approach - to keep it simple:
 					<ol>
 						<li>The picture</li>
 						<li>YOUR tastes and preferences</li>

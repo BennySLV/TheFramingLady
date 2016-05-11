@@ -103,6 +103,13 @@
 					<div id="img-6-text-description"></div>
 					<div class="close-button" id="close-button-6"><i aria-hidden="true"></i></div>
 				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="video-gallery">
+						<p>Also, check out my videos, showcasing my additional work not seen above.</p>
+					</div>
+				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->
 		<div class="panel panel-footer">
