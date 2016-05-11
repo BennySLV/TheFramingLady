@@ -59,32 +59,49 @@
 				<div class="col-sm-12">
 					<h1>Portfolio</h1>
 					<p>Where the fun stuff is!</p>
-					<p>Below is some of my work from various projects. Please click on each picture for more information. Please note that you will need to double-click each picture to close the text-description box once open.</p>
+					<p>Below is some of my work from various projects. Please click on the panel below each picture for more information.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-1" src="images/landscape/badminton-awards.jpg" />
+					<div class="more-info-panel" id="img-1-more-info-panel">Click for more information</div>
 					<div id="img-1-text-description"></div>			
+					<div class="close-button" id="close-button-1"><i aria-hidden="true"></i></div>
 				</div>				
 				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-2" src="images/landscape/childrens-shoes.jpg" /><div id="img-2-text-description"></div>
+					<img class="portfolio-image" id="img-2" src="images/landscape/childrens-shoes.jpg" />
+					<div class="more-info-panel" id="img-2-more-info-panel">Click for more information</div>
+					<div id="img-2-text-description"></div>
+					<div class="close-button" id="close-button-2"><i aria-hidden="true"></i></div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-3" src="images/landscape/grandad-darts.jpg" /><div id="img-3-text-description"></div>
+					<img class="portfolio-image" id="img-3" src="images/landscape/grandad-darts.jpg" />
+					<div class="more-info-panel" id="img-3-more-info-panel">Click for more information</div>
+					<div id="img-3-text-description"></div>
+					<div class="close-button" id="close-button-3"><i aria-hidden="true"></i></div>
 				</div>
 				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-4" src="images/landscape/ship-captain.jpg" /><div id="img-4-text-description"></div>
+					<img class="portfolio-image" id="img-4" src="images/landscape/ship-captain.jpg" />
+					<div class="more-info-panel" id="img-4-more-info-panel">Click for more information</div>
+					<div id="img-4-text-description"></div>
+					<div class="close-button" id="close-button-4"><i aria-hidden="true"></i></div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-5" src="images/landscape/medals.jpg" /><div id="img-5-text-description"></div>
+					<img class="portfolio-image" id="img-5" src="images/landscape/medals.jpg" />
+					<div class="more-info-panel" id="img-5-more-info-panel">Click for more information</div>
+					<div id="img-5-text-description"></div>
+					<div class="close-button" id="close-button-5"><i aria-hidden="true"></i></div>
 				</div>
 				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-6" src="images/landscape/pebbles-frame.jpg" /><div id="img-6-text-description"></div>
+					<img class="portfolio-image" id="img-6" src="images/landscape/pebbles-frame.jpg" />
+					<div class="more-info-panel" id="img-6-more-info-panel">Click for more information</div>
+					<div id="img-6-text-description"></div>
+					<div class="close-button" id="close-button-6"><i aria-hidden="true"></i></div>
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->
