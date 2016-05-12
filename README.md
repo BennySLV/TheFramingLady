@@ -32,7 +32,8 @@ Using the terminal:
         <code>&lt;/Directory&gt;</code><br />
 <code>&lt;/VirtualHost&gt;</code><br />
 
-</ol>
-3. Then access your hosts file (<code>/etc/hosts</code>) and add a new line underneath your existing hosts with the following code:
+
+<li>Then access your hosts file (<code>/etc/hosts</code>) and add a new line underneath your existing hosts with the following code:</li>
 
 <code>127.0.0.1       theframinglady.dev localhost</code>
+</ol>
