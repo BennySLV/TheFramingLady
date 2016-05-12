@@ -65,13 +65,13 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-1" src="images/landscape/badminton-awards.jpg" />
-					<div class="more-info-panel" id="img-1-more-info-panel">Click for more information</div>
+					<button class="more-info-panel" id="img-1-more-info-panel">Click for more information</button>
 					<div id="img-1-text-description"></div>			
 					<button class="close-button" id="close-button-1"><i aria-hidden="true"></i></button>
 				</div>				
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-2" src="images/landscape/childrens-shoes.jpg" />
-					<div class="more-info-panel" id="img-2-more-info-panel">Click for more information</div>
+					<button class="more-info-panel" id="img-2-more-info-panel">Click for more information</button>
 					<div id="img-2-text-description"></div>
 					<button class="close-button" id="close-button-2"><i aria-hidden="true"></i></button>
 				</div>
@@ -79,13 +79,13 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-3" src="images/landscape/grandad-darts.jpg" />
-					<div class="more-info-panel" id="img-3-more-info-panel">Click for more information</div>
+					<button class="more-info-panel" id="img-3-more-info-panel">Click for more information</button>
 					<div id="img-3-text-description"></div>
 					<button class="close-button" id="close-button-3"><i aria-hidden="true"></i></button>
 				</div>
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-4" src="images/landscape/ship-captain.jpg" />
-					<div class="more-info-panel" id="img-4-more-info-panel">Click for more information</div>
+					<button class="more-info-panel" id="img-4-more-info-panel">Click for more information</button>
 					<div id="img-4-text-description"></div>
 					<button class="close-button" id="close-button-4"><i aria-hidden="true"></i></button>
 				</div>
@@ -93,20 +93,20 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-5" src="images/landscape/medals.jpg" />
-					<div class="more-info-panel" id="img-5-more-info-panel">Click for more information</div>
+					<button class="more-info-panel" id="img-5-more-info-panel">Click for more information</button>
 					<div id="img-5-text-description"></div>
 					<button class="close-button" id="close-button-5"><i aria-hidden="true"></i></button>
 				</div>
 				<div class="col-sm-6">
 					<img class="portfolio-image" id="img-6" src="images/landscape/pebbles-frame.jpg" />
-					<div class="more-info-panel" id="img-6-more-info-panel">Click for more information</div>
+					<button class="more-info-panel" id="img-6-more-info-panel">Click for more information</button>
 					<div id="img-6-text-description"></div>
 					<button class="close-button" id="close-button-6"><i aria-hidden="true"></i></button>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
-					<div id="video-gallery">
+					<div id="video-gallery"><br />
 						<p>Also, check out my videos, showcasing my additional work not seen above.</p>
 					</div>
 				</div>

@@ -29,6 +29,10 @@ a:hover {
 	border-radius: 10px;
 }
 
+.more-info-panel:active {
+	background-color: green;
+}
+
 .description {
 	font-family: Crab;
 	font-size: 36px;

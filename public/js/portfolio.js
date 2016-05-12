@@ -7,7 +7,7 @@
 $(function() {
 
 	// Initially hide all "close" buttons when the page loads
-	$('button').each(function() {
+	$('.close-button').each(function() {
 		$(this).hide();
 	});
 
