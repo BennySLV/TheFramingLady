@@ -30,10 +30,10 @@ Using the terminal:
                   <code>Order allow,deny</code><br />
                   <code>Allow from all</code><br />
         <code>&lt;/Directory&gt;</code><br />
-<code>&lt;/VirtualHost&gt;</code><br />
-
+<code>&lt;/VirtualHost&gt;</code>
 
 <li>Then access your hosts file (<code>/etc/hosts</code>) and add a new line underneath your existing hosts with the following code:</li>
 
 <code>127.0.0.1       theframinglady.dev localhost</code>
 </ol>
+<p>Please note that these above details will be different if you choose to use your own personal web server as opposed to localhost.</p>
