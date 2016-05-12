@@ -154,8 +154,7 @@
 					<a href="https://uk.pinterest.com/theframinglady/" target="_blank"><i class="fa fa-pinterest-square" id="pinterest-icon" aria-hidden="true"></i></a>
 					<a href="mailto:am@theframinglady.com?Subject=Hello%20The%20Framing%20Lady"><i class="fa fa-envelope-square" id="email-icon" aria-hidden="true"></i></a>
 				</div>
-			</div> <!-- End of #social-media -->
-			<br />									
+			</div><br />									
 			<div class="row">
 				<div class="col-sm-8">
 					<p id="copyright">&copy; The Framing Lady <?php echo date('Y'); ?></p>

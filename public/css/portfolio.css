@@ -67,7 +67,7 @@ a:hover {
 	background-color: red;
 }
 
-.fa, .fa-times {
+.fa-times {
 	float: right;
 	position: static;
 	background-color: rgba(0, 0, 0, 0.3);
