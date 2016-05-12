@@ -59,58 +59,91 @@
 				<div class="col-sm-12">
 					<h1>Portfolio</h1>
 					<p>Where the fun stuff is!</p>
+					<h2>Pictures</h2>
 					<p>Below is some of my work from various projects. Please click on the panel below each picture for more information.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-1" src="images/landscape/badminton-awards.jpg" />
-					<button class="more-info-panel" id="img-1-more-info-panel">Click for more information</button>
-					<div id="img-1-text-description"></div>			
-					<button class="close-button" id="close-button-1"><i aria-hidden="true"></i></button>
-				</div>				
-				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-2" src="images/landscape/childrens-shoes.jpg" />
-					<button class="more-info-panel" id="img-2-more-info-panel">Click for more information</button>
-					<div id="img-2-text-description"></div>
-					<button class="close-button" id="close-button-2"><i aria-hidden="true"></i></button>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-3" src="images/landscape/grandad-darts.jpg" />
-					<button class="more-info-panel" id="img-3-more-info-panel">Click for more information</button>
-					<div id="img-3-text-description"></div>
-					<button class="close-button" id="close-button-3"><i aria-hidden="true"></i></button>
-				</div>
-				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-4" src="images/landscape/ship-captain.jpg" />
-					<button class="more-info-panel" id="img-4-more-info-panel">Click for more information</button>
-					<div id="img-4-text-description"></div>
-					<button class="close-button" id="close-button-4"><i aria-hidden="true"></i></button>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-5" src="images/landscape/medals.jpg" />
-					<button class="more-info-panel" id="img-5-more-info-panel">Click for more information</button>
-					<div id="img-5-text-description"></div>
-					<button class="close-button" id="close-button-5"><i aria-hidden="true"></i></button>
-				</div>
-				<div class="col-sm-6">
-					<img class="portfolio-image" id="img-6" src="images/landscape/pebbles-frame.jpg" />
-					<button class="more-info-panel" id="img-6-more-info-panel">Click for more information</button>
-					<div id="img-6-text-description"></div>
-					<button class="close-button" id="close-button-6"><i aria-hidden="true"></i></button>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="video-gallery"><br />
-						<p>Also, check out my videos, showcasing my additional work not seen above.</p>
+			<div class="image-gallery">
+				<div class="row">			
+					<div class="col-sm-6">					
+						<img class="portfolio-image" id="img-1" src="images/landscape/badminton-awards.jpg" />
+						<button class="more-info-panel" id="img-1-more-info-panel">Click for more information</button>
+						<div id="img-1-text-description"></div>			
+						<button class="close-button" id="close-button-1"><i aria-hidden="true"></i></button>
+					</div>				
+					<div class="col-sm-6">
+						<img class="portfolio-image" id="img-2" src="images/landscape/childrens-shoes.jpg" />
+						<button class="more-info-panel" id="img-2-more-info-panel">Click for more information</button>
+						<div id="img-2-text-description"></div>
+						<button class="close-button" id="close-button-2"><i aria-hidden="true"></i></button>
 					</div>
 				</div>
-			</div>			
+				<div class="row">
+					<div class="col-sm-6">
+						<img class="portfolio-image" id="img-3" src="images/landscape/grandad-darts.jpg" />
+						<button class="more-info-panel" id="img-3-more-info-panel">Click for more information</button>
+						<div id="img-3-text-description"></div>
+						<button class="close-button" id="close-button-3"><i aria-hidden="true"></i></button>
+					</div>
+					<div class="col-sm-6">
+						<img class="portfolio-image" id="img-4" src="images/landscape/ship-captain.jpg" />
+						<button class="more-info-panel" id="img-4-more-info-panel">Click for more information</button>
+						<div id="img-4-text-description"></div>
+						<button class="close-button" id="close-button-4"><i aria-hidden="true"></i></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<img class="portfolio-image" id="img-5" src="images/landscape/medals.jpg" />
+						<button class="more-info-panel" id="img-5-more-info-panel">Click for more information</button>
+						<div id="img-5-text-description"></div>
+						<button class="close-button" id="close-button-5"><i aria-hidden="true"></i></button>
+					</div>
+					<div class="col-sm-6">
+						<img class="portfolio-image" id="img-6" src="images/landscape/pebbles-frame.jpg" />
+						<button class="more-info-panel" id="img-6-more-info-panel">Click for more information</button>
+						<div id="img-6-text-description"></div>
+						<button class="close-button" id="close-button-6"><i aria-hidden="true"></i></button>
+					</div>
+				</div><br />
+			</div>
+			<h2>Videos</h2>
+			<p>Also, check out my videos, showcasing my additional work:</p>
+			<div class="video-gallery">
+				<div class="row">
+					<div class="col-sm-4">						
+						<iframe id="video-1" width="250" height="250" src="https://www.youtube.com/embed/-gZUHlCnm9A" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-sm-4">
+						<iframe id="video-2" width="250" height="250" src="https://www.youtube.com/embed/oW_pYF2cUAM" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-sm-4">
+						<iframe id="video-3" width="250" height="250" src="https://www.youtube.com/embed/cSGgeduMuXQ" frameborder="0" allowfullscreen></iframe>
+					</div>					
+				</div> <!-- End of first video-gallery row -->
+				<div class="row">
+					<div class="col-sm-4">
+						<iframe id="video-4" width="250" height="250" src="https://www.youtube.com/embed/yBT5bSQHY0E" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-sm-4">
+						<iframe id="video-5" width="250" height="250" src="https://www.youtube.com/embed/a3rN0sKy-YE" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-sm-4">
+						<iframe id="video-6" width="250" height="250" src="https://www.youtube.com/embed/iA4KOz68IZQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div> <!-- End of second video-gallery row -->
+				<div class="row">
+					<div class="col-sm-4">
+						<iframe id="video-7" width="250" height="250" src="https://www.youtube.com/embed/BKsk7l47R9g" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-sm-4">
+						<iframe id="video-8" width="250" height="250" src="https://www.youtube.com/embed/Vn8EL3HbsR0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-sm-4">
+						<iframe id="video-9" width="250" height="250" src="https://www.youtube.com/embed/8dtitER5VmY" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div> 
+			</div> <!-- End of .video-gallery -->			
 		</div> <!-- End of .jumbotron -->
 		<div class="panel panel-footer">
 			<div class="row" id="social-media">

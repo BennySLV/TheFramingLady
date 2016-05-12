@@ -10,17 +10,27 @@ a:hover {
 	font-weight: normal;
 }
 
+.image-gallery {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
 .portfolio-image {
-	position: relative;
+	position: static;
 	
 	/* Responsive images */
 	max-width: 100%;
 	height: auto;
 }
 
+#img-3, #img-4, #img-5, #img-6 {
+	padding-top: 10px;
+}
+
 .more-info-panel {
 	background-color: rgba(0, 0, 0, 0.3);
-	width: 495px;
+	width: 485px;
 	height: 30px;
 	padding-left: 5px;
 	font-family: Arial;
@@ -57,12 +67,36 @@ a:hover {
 	background-color: red;
 }
 
-#img-3, #img-4, #img-5, #img-6 {
-	padding-top: 10px;
-}
-
 .fa, .fa-times {
 	float: right;
 	position: static;
 	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video-gallery {
+	/* Enable responsive design */
+	max-width: 100%;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#video-4, #video-5, #video-6, #video-7, #video-8, #video-9 {
+	margin-top: 20px;
+}
+
+#video-1, #video-4, #video-7 {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#video-2, #video-5, #video-8 {
+	margin-left: 30px;
+	padding-top: 10px;
+}
+
+#video-3, #video-6, #video-9 {
+	margin-left: 65px;
+	padding-right: 10px;
+	padding-top: 10px;
 }

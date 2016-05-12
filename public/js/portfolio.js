@@ -5,7 +5,6 @@
 
 // Shorthand for $(document).ready(function(){ })
 $(function() {
-
 	// Initially hide all "close" buttons when the page loads
 	$('.close-button').each(function() {
 		$(this).hide();
@@ -24,7 +23,7 @@ $(function() {
 
 	// Remove text-description when the user clicks on the "close" button
 	$('#close-button-1').on('click', function() {
-		$(this).data('clicked', true); // Flag to indicate that the "img-1" close button has been clicked
+		$(this).data('clicked', true); // Flag to indicate that the close button has been clicked
 
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) {			
@@ -73,7 +72,7 @@ $(function() {
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) {
 			$('#img-3-text-description').slideUp('slow');
-			$('#close-button-3').removeClass('fa fa-times').text('');
+			$('#close-button-3').removeClass('fa fa-times').text('').hide();
 		}			
 	});
 		
@@ -95,7 +94,7 @@ $(function() {
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) { 
 			$('#img-4-text-description').slideUp('slow');
-			$('#close-button-4').removeClass('fa fa-times').text('');
+			$('#close-button-4').removeClass('fa fa-times').text('').hide();
 		}
 	});
 
@@ -117,7 +116,7 @@ $(function() {
 		// If the "close" button has been clicked on
 		if($(this).data('clicked')) {
 			$('#img-5-text-description').slideUp('slow');
-			$('#close-button-5').removeClass('fa fa-times').text('');
+			$('#close-button-5').removeClass('fa fa-times').text('').hide();
 		}			
 	});
 
@@ -139,7 +138,7 @@ $(function() {
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) {
 			$('#img-6-text-description').slideUp('slow');
-			$('#close-button-6').removeClass('fa fa-times').text('');
+			$('#close-button-6').removeClass('fa fa-times').text('').hide();
 		}
 	});
 });
