@@ -77,7 +77,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
-					<iframe id="youtube-video-intro" width="500" height="315" src="https://www.youtube.com/embed/E9DtOieHtd4" frameborder="0" allowfullscreen></iframe>
+					<iframe id="youtube-video-intro" width="336" height="336" src="https://www.youtube.com/embed/E9DtOieHtd4" frameborder="0" allowfullscreen></iframe>
 					<p>In my spare time, I like travelling. With my favourite country being South Africa. I also like visiting art galleries as well as walking my dogs around the Holwell countryside.</p>
 				</div>
 			</div>
