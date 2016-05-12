@@ -5,14 +5,20 @@
 
 // Shorthand for $(document).ready(function(){ })
 $(function() {
+
+	// Initially hide all "close" buttons when the page loads
+	$('button').each(function() {
+		$(this).hide();
+	});
+
 	// First panel
 	$('#img-1-more-info-panel').on('click', function() {
-		$(this).data('clicked', true); // Flag to indicate that the first panel has been clicked on		
+		$(this).data('clicked', true); // Flag to indicate that the first panel has been clicked on	
 
 		// If the first panel was clicked on by the user
 		if($(this).data('clicked')) {
 			$('#img-1-text-description').addClass('description').slideDown('slow').load('custom-text/img-1-description.html');
-			$('#close-button-1').addClass('fa fa-times').text(' Close');
+			$('#close-button-1').show().addClass('fa fa-times').text(' Close');
 		}
 	});
 
@@ -23,7 +29,7 @@ $(function() {
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) {			
 			$('#img-1-text-description').slideUp('slow');
-			$('#close-button-1').removeClass('fa fa-times').text('');			
+			$('#close-button-1').removeClass('fa fa-times').text('').hide();			
 		}		
 	});
 
@@ -34,7 +40,7 @@ $(function() {
 		// If the second panel was clicked on by the user
 		if($(this).data('clicked')) {
 			$('#img-2-text-description').addClass('description').slideDown('slow').load('custom-text/img-2-description.html');
-			$('#close-button-2').addClass('fa fa-times').text(' Close');
+			$('#close-button-2').show().addClass('fa fa-times').text(' Close');
 		}		
 	});
 
@@ -45,7 +51,7 @@ $(function() {
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) {
 			$('#img-2-text-description').slideUp('slow');
-			$('#close-button-2').removeClass('fa fa-times').text('');
+			$('#close-button-2').removeClass('fa fa-times').text('').hide();
 		}
 	});
 
@@ -56,7 +62,7 @@ $(function() {
 		// If the third panel was clicked on by the user
 		if($(this).data('clicked'), true) {
 			$('#img-3-text-description').addClass('description').slideDown('slow').load('custom-text/img-3-description.html');
-			$('#close-button-3').addClass('fa fa-times').text(' Close');
+			$('#close-button-3').show().addClass('fa fa-times').text(' Close');
 		}
 	});
 
@@ -78,7 +84,7 @@ $(function() {
 		// If the "close" button has been clicked on by the user
 		if($(this).data('clicked')) {
 			$('#img-4-text-description').addClass('description').slideDown('slow').load('custom-text/img-4-description.html');
-			$('#close-button-4').addClass('fa fa-times').text(' Close');
+			$('#close-button-4').show().addClass('fa fa-times').text(' Close');
 		}		
 	});
 
@@ -100,7 +106,7 @@ $(function() {
 		// Remove text-description when the user clicks on the "close" button
 		if($(this).data('clicked')) {
 			$('#img-5-text-description').addClass('description').slideDown('slow').load('custom-text/img-5-description.html');
-			$('#close-button-5').addClass('fa fa-times').text(' Close');
+			$('#close-button-5').show().addClass('fa fa-times').text(' Close');
 		}
 	});
 
@@ -122,7 +128,7 @@ $(function() {
 		// Remove text-description when the user clicks on the "close" button
 		if($(this).data('clicked')) {
 			$('#img-6-text-description').addClass('description').slideDown('slow').load('custom-text/img-6-description.html');
-			$('#close-button-6').addClass('fa fa-times').text(' Close');
+			$('#close-button-6').show().addClass('fa fa-times').text(' Close');
 		}
 	});
 

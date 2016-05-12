@@ -45,8 +45,16 @@ a:hover {
 	border: 1px solid black;	
 }
 
+.close-button {
+	border: none;
+}
+
+.close-button:active {
+	background-color: red;
+}
+
 #img-3, #img-4, #img-5, #img-6 {
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .fa, .fa-times {
