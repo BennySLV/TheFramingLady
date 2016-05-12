@@ -9,3 +9,30 @@
 <h2>Installation</h2>
 
 It is recommended to set up your own virtual host on your preferred web-server stack (LAMP is most preferred). You will alos need a database set up on your MySQL server.
+
+For example, if you are using a LAMP Stack:
+
+Using the terminal:
+<ol>
+<li>Access the following file:</li>
+  - <code>/etc/apache2/sites-enabled/000-default.conf</code><br />
+
+<li>Inside your <code>000-default.conf file</code>, add the following code:</li><br />
+
+<code>&lt;VirtualHost *:80&gt;</code><br />
+        <code>ServerName theframinglady.dev</code><br />
+        <code>DocumentRoot /var/www/TheFramingLady/public</code><br />
+        <code>SetEnv APPLICATION_ENV "development"</code><br />
+        <code>&lt;Directory /var/www/TheFramingLady/public&gt;</code><br />
+                  <code>Options FollowSymLinks</code><br />
+                  <code>DirectoryIndex index.php</code><br />
+                  <code>AllowOverride All</code><br />
+                  <code>Order allow,deny</code><br />
+                  <code>Allow from all</code><br />
+        <code>&lt;/Directory&gt;</code><br />
+<code>&lt;/VirtualHost&gt;</code><br />
+
+</ol>
+3. Then access your hosts file (<code>/etc/hosts</code>) and add a new line underneath your existing hosts with the following code:
+
+<code>127.0.0.1       theframinglady.dev localhost</code>
