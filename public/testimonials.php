@@ -79,10 +79,26 @@
 							<td>Silveston</td>
 							<td>A great service! Anne-Marie understood my requirements straight away and delivered the work to a very high standard. Exactly what I was looking for. I can't recommend her highly enough.</td>
 						</tr>
-					</table>
+					</table><br />
+					<button id="submit-testimonial-button">Click here to submit your own testimonial</button>
+				</div>
+			</div><br />
+			<div class="row">
+				<div class="col-sm-12">
+					<form action="testimonials.php" method="post" id="testimonials-form">
+						<fieldset>
+							<legend>To submit your own testimonial, please fill in the form with the following details:</legend>						
+							<p><input type="text" name="first-name" placeholder="First Name..." /></p>
+							<p><input type="text" name="surname" placeholder="Surname..." /></p>
+							<p><input type="email" name="email" placeholder="Email Address..." /></p>
+							<p><input type="email" name="confirm-email" placeholder="Confirm Email Address"></p>
+							<p><textarea name="comments" placeholder="Comments..."></textarea></p>
+							<input type="submit" name="submit" value="Submit" />
+						</fieldset>
+					</form>
 				</div>
 			</div>
-		</div>
+		</div> <!-- End of .jumbotron -->
 		<div class="panel panel-footer">
 			<div class="row" id="social-media">
 				<div class="col-sm-12">

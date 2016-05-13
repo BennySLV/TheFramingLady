@@ -19,3 +19,14 @@
 #testimonials-table td:nth-child(3) {
 	font-style: italic;
 }
+
+#testimonials-form {
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#testimonials-form:focus {
+	background-color: yellow;
+}
