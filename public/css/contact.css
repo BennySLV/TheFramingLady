@@ -6,6 +6,15 @@
 	font-weight: bold;
 }
 
+#business-location {
+	width: 600px;
+	height: 450px;
+
+	/* Responsive design */
+	max-width: 100%;
+	max-height: auto;
+}
+
 #contact-form {
 	border: 1px solid black;
 	border-radius: 10px;

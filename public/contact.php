@@ -16,6 +16,9 @@
 	<!-- jQuery-UI library -->
 	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
 
+	<!-- Google Maps API -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+
 	<!-- Latest compiled JavaScript for Bootstrap -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -60,11 +63,11 @@
 					<h1>Contact</h1>
 					<p>Let's communicate!</p>
 					<p>Tel: 01462 713388</p>
-					<p>Email: <a href="mailto:am@theframinglady.com?Subject=Hello%20The%20Framing%20Lady" target="top">am@theframinglady.com</a></p>
+					<p>Email: <a href="mailto:bsilveston37@gmail.com?Subject=Hello%20The%20Framing%20Lady" target="top">am@theframinglady.com</a></p>
 					<h3>Address:</h3>
 					<p id="address">3 St. Peter's Green,<br />Holwell,<br />Hitchin,<br />Hertfordshire,<br />SG5 3SW<br />United Kingdom
 					</p><br />
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2457.1690382938878!2d-0.3063385484870155!3d51.985572583349274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876348e965f130b%3A0x95589353ab32e856!2s3+St+Peters+Green%2C+Holwell%2C+Hitchin%2C+Hertfordshire+SG5+3SW!5e0!3m2!1sen!2suk!4v1462291041518" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe id="business-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2457.1690382938878!2d-0.30633854848704095!3d51.985572583349274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876348e965f130b%3A0x95589353ab32e856!2s3+St+Peters+Green%2C+Holwell%2C+Hitchin%2C+Hertfordshire+SG5+3SW!5e0!3m2!1sen!2suk!4v1463146929792" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<div class="col-sm-6">
 					<form id="contact-form">
@@ -87,7 +90,7 @@
 					<a href="https://twitter.com/theframinglady" target="_blank"><i class="fa fa-twitter-square" id="twitter-icon" aria-hidden="true"></i></a>
 					<a href="https://uk.linkedin.com/in/theframinglady" target="_blank"><i class="fa fa-linkedin-square" id="linkedin-icon" aria-hidden="true"></i></a>
 					<a href="https://uk.pinterest.com/theframinglady/" target="_blank"><i class="fa fa-pinterest-square" id="pinterest-icon" aria-hidden="true"></i></a>
-					<a href="mailto:am@theframinglady.com?Subject=Hello%20The%20Framing%20Lady"><i class="fa fa-envelope-square" id="email-icon" aria-hidden="true"></i></a>
+					<a href="mailto:bsilveston37@gmail.com?Subject=Hello%20The%20Framing%20Lady"><i class="fa fa-envelope-square" id="email-icon" aria-hidden="true"></i></a>
 				</div>
 			</div><br />									
 			<div class="row">
