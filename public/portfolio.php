@@ -143,7 +143,13 @@
 						<iframe id="video-9" width="250" height="250" src="https://www.youtube.com/embed/8dtitER5VmY" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div> 
-			</div> <!-- End of .video-gallery -->			
+			</div> <!-- End of .video-gallery -->
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Still not enough?</h3>
+					<p>If you want to see more work from me, then please feel free to <a href="contact.php">contact</a> me.
+				</div>
+			</div>			
 		</div> <!-- End of .jumbotron -->
 		<div class="panel panel-footer">
 			<div class="row" id="social-media">

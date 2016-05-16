@@ -79,6 +79,9 @@
 							<input type="submit" name="submit" value="Submit" id="submit-button"></input>
 						</fieldset>
 					</form>
+					<?php 
+						// PHP code for form handling
+					?>
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
