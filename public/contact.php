@@ -69,19 +69,20 @@
 					</p><br />					
 				</div>
 				<div class="col-sm-6">
-					<form id="contact-form">
+					<form action="contact.php" method="post" id="contact-form">
 					<legend>Alternatively, please fill in the following form:</legend>
 						<fieldset id="contact-form-inner">
-							<p><input type="text" name="first_name" placeholder="First Name"></input><p>
+							<p><input type="text" name="firstName" placeholder="First Name"></input><p>
 							<p><input type="text" name="surname" placeholder="Surname"></input></p>
 							<p><input type="email" name="email" placeholder="Email Address"></input></p>
+							<p><input type="email" name="confirmEmail" placeholder="Confirm Email Address" name="">
 							<p><textarea name="message" placeholder="Message..."></textarea></p>
 							<input type="submit" name="submit" value="Submit" id="submit-button"></input>
 						</fieldset>
 					</form>
 					<?php 
-						// PHP code for form handling
-					?>
+						// PHP code for form handling											
+					?><br />
 				</div>
 				<div class="row">
 					<div class="col-sm-12">

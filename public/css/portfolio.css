@@ -40,7 +40,7 @@ a:hover {
 }
 
 .more-info-panel:active {
-	background-color: green;
+	background-color: rgba(95, 216, 14, 0.45);
 }
 
 .description {
