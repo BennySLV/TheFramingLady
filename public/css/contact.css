@@ -28,7 +28,7 @@
 	padding: 10px;	
 }
 
-#contact-form:input {
+input:focus {
 	background-color: yellow;
 }
 

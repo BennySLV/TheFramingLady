@@ -88,14 +88,18 @@
 					<form action="testimonials.php" method="post" id="testimonials-form">
 						<fieldset>
 							<legend>To submit your own testimonial, please fill in the form with the following details:</legend>						
-							<p><input type="text" name="first-name" placeholder="First Name..." /></p>
+							<p><input type="text" name="firstName" placeholder="First Name..." /></p>
 							<p><input type="text" name="surname" placeholder="Surname..." /></p>
 							<p><input type="email" name="email" placeholder="Email Address..." /></p>
-							<p><input type="email" name="confirm-email" placeholder="Confirm Email Address"></p>
+							<p><input type="email" name="confirmEmail" placeholder="Confirm Email Address"></p>
 							<p><textarea name="comments" placeholder="Comments..."></textarea></p>
-							<input type="submit" name="submit" value="Submit" />
+							<input type="submit" name="submit" value="Submit" id="submit-button" />			
 						</fieldset>
 					</form>
+					<button id="form-close-button"><i aria-hidden="true"></i></button>
+					<?php 
+						// PHP code for form handling
+					?>
 				</div>
 			</div>
 		</div> <!-- End of .jumbotron -->
