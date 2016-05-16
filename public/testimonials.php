@@ -39,7 +39,7 @@
 					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
 				</div>
 				<div class="col-sm-8">
-					<span id="slogan">Making Your Art Sing</span>
+					<span id="slogan">makes your ART sing!</span>
 				</div>					
 				</div>				
 			<div class="row">
@@ -88,9 +88,9 @@
 					<form action="testimonials.php" method="post" id="testimonials-form">
 						<fieldset>
 							<legend>To submit your own testimonial, please fill in the form with the following details:</legend>						
-							<p><input type="text" name="firstName" placeholder="First Name..." /></p>
-							<p><input type="text" name="surname" placeholder="Surname..." /></p>
-							<p><input type="email" name="email" placeholder="Email Address..." /></p>
+							<p><input type="text" name="firstName" placeholder="First Name" /></p>
+							<p><input type="text" name="surname" placeholder="Surname" /></p>
+							<p><input type="email" name="email" placeholder="Email Address" /></p>
 							<p><input type="email" name="confirmEmail" placeholder="Confirm Email Address"></p>
 							<p><textarea name="comments" placeholder="Comments..."></textarea></p>
 							<input type="submit" name="submit" value="Submit" id="submit-button" />			

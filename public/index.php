@@ -39,7 +39,7 @@
 					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
 				</div>
 				<div class="col-sm-8">
-					<span id="slogan">Making Your Art Sing</span>
+					<span id="slogan">makes your ART sing!</span>
 				</div>					
 			</div>				
 			<div class="row">

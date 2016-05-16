@@ -7,7 +7,7 @@
 }
 
 #business-location {
-	width: 600px;
+	width: 1030px;
 	height: 450px;
 
 	/* Responsive design */
@@ -16,6 +16,7 @@
 }
 
 #contact-form {
+	margin-top: 20px;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 10px;

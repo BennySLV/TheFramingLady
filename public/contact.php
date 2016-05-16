@@ -42,7 +42,7 @@
 					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
 				</div>
 				<div class="col-sm-8">
-					<span id="slogan">Making Your Art Sing</span>
+					<span id="slogan">makes your ART sing!</span>
 				</div>					
 				</div>				
 			<div class="row">
@@ -66,21 +66,26 @@
 					<p>Email: <a href="mailto:bsilveston37@gmail.com?Subject=Hello%20The%20Framing%20Lady" target="top">am@theframinglady.com</a></p>
 					<h3>Address:</h3>
 					<p id="address">3 St. Peter's Green,<br />Holwell,<br />Hitchin,<br />Hertfordshire,<br />SG5 3SW<br />United Kingdom
-					</p><br />
-					<iframe id="business-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2457.1690382938878!2d-0.30633854848704095!3d51.985572583349274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876348e965f130b%3A0x95589353ab32e856!2s3+St+Peters+Green%2C+Holwell%2C+Hitchin%2C+Hertfordshire+SG5+3SW!5e0!3m2!1sen!2suk!4v1463146929792" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</p><br />					
 				</div>
 				<div class="col-sm-6">
 					<form id="contact-form">
 					<legend>Alternatively, please fill in the following form:</legend>
 						<fieldset id="contact-form-inner">
-							<p>First Name: <input type="text" name="first_name" placeholder="Enter here..."></input><p>
-							<p>Surname: <input type="text" name="surname" placeholder="Enter here..."></input></p>
-							<p>Email: <input type="email" name="email" placeholder="Enter here..."></input></p>
-							<p>Message: <textarea name="message" placeholder="Enter here..."></textarea></p>
+							<p><input type="text" name="first_name" placeholder="First Name"></input><p>
+							<p><input type="text" name="surname" placeholder="Surname"></input></p>
+							<p><input type="email" name="email" placeholder="Email Address"></input></p>
+							<p><textarea name="message" placeholder="Message..."></textarea></p>
 							<input type="submit" name="submit" value="Submit" id="submit-button"></input>
 						</fieldset>
 					</form>
 				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<iframe id="business-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2457.1690382938878!2d-0.30633854848704095!3d51.985572583349274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876348e965f130b%3A0x95589353ab32e856!2s3+St+Peters+Green%2C+Holwell%2C+Hitchin%2C+Hertfordshire+SG5+3SW!5e0!3m2!1sen!2suk!4v1463146929792" frameborder="0" style="border:0" allowfullscreen>
+						</iframe>
+					</div>
+				</div>				
 			</div>												
 		</div> <!-- End of .jumbotron -->
 		<div class="panel panel-footer">
