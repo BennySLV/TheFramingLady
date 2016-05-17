@@ -67,6 +67,11 @@ a:hover {
 	padding-top: 15px;
 }
 
+.mandatory-field {
+	font-weight: bold;
+	font-size: 24px;
+}
+
 #social-media a {
 	color: black;
 }

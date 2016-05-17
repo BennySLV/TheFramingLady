@@ -70,14 +70,14 @@
 				</div>
 				<div class="col-sm-6">
 					<form action="contact.php" method="post" id="contact-form">
-					<legend>Alternatively, please fill in the following form:</legend>
+					<legend>Alternatively, please fill in the following form (mandatory fields are marked with an asterisk (*):</legend>
 						<fieldset id="contact-form-inner">
-							<p><input type="text" name="firstName" placeholder="First Name"></input><p>
-							<p><input type="text" name="surname" placeholder="Surname"></input></p>
-							<p><input type="email" name="email" placeholder="Email Address"></input></p>
-							<p><input type="email" name="confirmEmail" placeholder="Confirm Email Address" name="">
-							<p><textarea name="message" placeholder="Message..."></textarea></p>
-							<input type="submit" name="submit" value="Submit" id="submit-button"></input>
+							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" /><span class="mandatory-field"> *</span> <span id="first-name-flag"><i aria-hidden="true"></i></span><p>
+							<p><input id="surname" type="text" name="surname" placeholder="Surname" /> <span id="surname-flag"><i aria-hidden="true"></i></span></p>
+							<p><input id="email" type="email" name="email" placeholder="Email Address" /><span class="mandatory-field"> *</span> <span id="email-flag"><i aria-hidden="true"></i></span></p>
+							<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address"><span class="mandatory-field"> *</span> <span id="confirm-email-flag"><i aria-hidden="true"></i></span></p>
+							<p><textarea id="message" name="message" placeholder="Message..."></textarea><span class="mandatory-field"> *</span> <span id="message-flag"><i aria-hidden="true"></i></span></p>
+							<input type="submit" name="submit" value="Submit" id="submit-button" />
 						</fieldset>
 					</form>
 					<?php 

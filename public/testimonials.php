@@ -85,20 +85,20 @@
 			</div><br />
 			<div class="row">
 				<div class="col-sm-12">
-					<form action="testimonials.php" method="post" id="testimonials-form">
+					<form action="testimonials-form-result.php" method="post" id="testimonials-form">
 						<fieldset>
 							<legend>To submit your own testimonial, please fill in the form with the following details:</legend>						
-							<p><input type="text" name="firstName" placeholder="First Name" /></p>
-							<p><input type="text" name="surname" placeholder="Surname" /></p>
-							<p><input type="email" name="email" placeholder="Email Address" /></p>
-							<p><input type="email" name="confirmEmail" placeholder="Confirm Email Address"></p>
-							<p><textarea name="comments" placeholder="Comments..."></textarea></p>
+							<p><input type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /><span class="mandatory-field"> *</span></p>
+							<p><input type="text" name="surname" placeholder="Surname" maxlength="20" value="<?php if(isset($_POST['surname'])) { echo $_POST['surname']; } ?>" /></p>
+							<p><input type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" /><span class="mandatory-field"> *</span></p>
+							<p><input type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40" value="<?php if(isset($_POST['confirmEmail'])) { echo $_POST['confirmEmail']; } ?>"><span class="mandatory-field"> *</span></p>
+							<p><textarea name="comments" placeholder="Comments..."></textarea><span class="mandatory-field"> *</span></p>
 							<input type="submit" name="submit" value="Submit" id="submit-button" />			
 						</fieldset>
 					</form>
 					<button id="form-close-button"><i aria-hidden="true"></i></button>
 					<?php 
-						// PHP code for form handling
+						/* PHP code for form handling */					
 					?>
 				</div>
 			</div>
