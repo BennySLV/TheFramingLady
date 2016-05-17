@@ -8,7 +8,7 @@
 
 <h2>Installation</h2>
 
-It is recommended to set up your own virtual host on your preferred web-server stack (LAMP is most preferred). You will alos need a database set up on your MySQL server.
+It is recommended to set up your own virtual host on your preferred web-server stack (LAMP is most preferred). You will also need a database set-up on your MySQL server.
 
 For example, if you are using a LAMP Stack:
 
