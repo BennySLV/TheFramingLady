@@ -59,6 +59,7 @@
 				<div class="col-sm-12">
 					<h1>Testimonials</h1>
 					<table id="testimonials-table">
+					<!-- Dummy data - to be dynamically created in the future -->
 						<tr>
 							<th>Firstname</th>
 							<th>Surname</th>
