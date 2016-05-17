@@ -32,7 +32,7 @@
 }
 
 #submit-testimonial-button:active {
-	background-color: rgba(95, 216, 14, 0.45);
+	background-color: rgba(95, 216, 14, 0.6);
 }
 
 #testimonials-form {
@@ -47,21 +47,30 @@ input:focus {
 	background-color: yellow;
 }
 
+.fa-times {
+	color: rgba(226, 19, 19, 0.6);
+}
+
+.fa-check {
+	color: rgba(95, 216, 14, 0.6);
+}
+
 #submit-button {
 	border-radius: 15px;
 	font-size: 18px;
-	background-color: rgba(226, 19, 19, 0.45);
+	background-color: rgba(226, 19, 19, 0.6);
 }
 
 #submit-button:active {
-	background-color: rgba(95, 216, 14, 0.45);
+	background-color: rgba(95, 216, 14, 0.6);
 }
 
 #form-close-button {
 	float: right;
 	border: none;
+	color: black;
 }
 
 #form-close-button:active {
-	background-color: rgba(226, 19, 19, 0.45);
+	background-color: rgba(226, 19, 19, 0.6);
 }
