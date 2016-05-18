@@ -93,7 +93,7 @@ $(function() {
 	});
 
 	// When the user clicks the "close" button apply the same above functionality
-	$('#form-close-button').on('click', function() {
+	$('#form-close-button').on('click', function(event) {
 		// Prevent the page from reloading
 		event.preventDefault(); 
 
