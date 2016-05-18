@@ -58,8 +58,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h1>Portfolio</h1>
-					<p>Where the fun stuff is!</p>
-					<h2>Pictures</h2>
+					<p id="intro-text">Where the fun stuff is and basically, what The Framing Lady is all about!</p>
 					<p>Below is some of my work from various projects. Please click on the panel below each picture for more information.</p>
 				</div>
 			</div>
@@ -108,7 +107,7 @@
 				</div><br />
 			</div>
 			<h2>Videos</h2>
-			<p>Also, check out my videos, showcasing my additional work:</p>
+			<p>Also check out my videos, showcasing my additional work, additional tips for picture-framing and much more:</p>
 			<div class="video-gallery">
 				<div class="row">
 					<div class="col-sm-4">						
@@ -146,8 +145,8 @@
 			</div> <!-- End of .video-gallery -->
 			<div class="row">
 				<div class="col-sm-12">
-					<h3>Still not enough?</h3>
-					<p>If you want to see more work from me, then please feel free to <a href="contact.php">contact</a> me.
+					<h3>Still not enough?!</h3>
+					<p>If you want to see more work from me, don't hesitate to <a href="contact.php">contact</a> me.
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->

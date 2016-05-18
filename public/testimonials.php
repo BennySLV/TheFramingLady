@@ -58,6 +58,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h1>Testimonials</h1>
+					<p id="intro-text">Here's what some people have been saying about me. Thank you so much for the feedback!</p>
 					<table id="testimonials-table">
 					<!-- Dummy data - to be dynamically created in the future -->
 						<tr>
