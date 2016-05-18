@@ -69,8 +69,8 @@
 					</p><br />					
 				</div>
 				<div class="col-sm-6">
+					<button id="contact-form-button">Alternatively, please fill in the following form</button>
 					<form action="contact.php" method="post" id="contact-form">
-					<button id="contact-form-button">Alternatively, please fill in the following form</button>						
 						<fieldset id="contact-form-inner"> 
 						<legend>Mandatory fields are marked with an asterisk (*):</legend>					
 							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" /><span class="mandatory-field"> *</span> <span id="first-name-flag"><i aria-hidden="true"></i></span><p>
