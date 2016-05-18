@@ -3,7 +3,7 @@
 	- Functionality for the image-panels 
 */
 
-// Shorthand for $(document).ready(function(){ })
+// Shorthand for $(document).ready(function(){ });
 $(function() {
 	// Initially hide all "close" buttons when the page loads
 	$('.close-button').each(function() {
