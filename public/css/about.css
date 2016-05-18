@@ -8,6 +8,7 @@
 
 #profile-pic {
 	float: right;
+	margin-right: -30px;
 	box-shadow: 4px 4px;
 	border-radius: 10px;
 	margin-left: 30px;
@@ -15,4 +16,5 @@
 
 #youtube-video-intro {
 	float: right;
+	margin-right: -30px;
 }
