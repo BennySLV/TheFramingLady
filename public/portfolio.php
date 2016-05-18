@@ -104,8 +104,8 @@
 						<div id="img-6-text-description"></div>
 						<button class="close-button" id="close-button-6"><i aria-hidden="true"></i></button>
 					</div>
-				</div><br />
-			</div>
+				</div>
+			</div> <!-- End of .image-gallery -->
 			<h2>Videos</h2>
 			<p>Also check out my videos, showcasing my additional work, additional tips for picture-framing and much more:</p>
 			<div class="video-gallery">
