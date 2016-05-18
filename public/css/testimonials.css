@@ -67,8 +67,10 @@ input:focus {
 
 #form-close-button {
 	float: right;
-	border: none;
+	border-radius: 15px;
+	font-size: 18px;
 	color: black;
+	margin-bottom: 20px;
 }
 
 #form-close-button:active {
