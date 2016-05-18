@@ -8,11 +8,10 @@
 
 <h2>Installation</h2>
 
-It is recommended to set up your own virtual host on your preferred web-server stack (LAMP is most preferred). You will also need a database set-up on your MySQL server.
+It is recommended to set up your own virtual host on your preferred web-server stack (LAMP is most preferred).
 
-For example, if you are using a LAMP Stack:
+For example, if you are using a LAMP Stack on the Ubuntu OS, using the terminal, please do the following:
 
-Using the terminal:
 <ol>
 <li>Access the following file:</li>
   - <code>/etc/apache2/sites-enabled/000-default.conf</code><br />
