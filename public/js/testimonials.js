@@ -79,7 +79,9 @@ $(function() {
 
 	// When the user clicks the "submit" button, close the form
 	$('#submit-button').on('click', function(event) {
-		event.preventDefault(); // Prevent the page from reloading
+		// Prevent the page from reloading
+		event.preventDefault(); 
+
 		// Flag to indicate that the "submit" button was clicked
 		var $submitButtonClicked = $(this).data('clicked', true);
 
@@ -92,8 +94,9 @@ $(function() {
 
 	// When the user clicks the "close" button apply the same above functionality
 	$('#form-close-button').on('click', function() {
-		event.preventDefault(); // Prevent the page from reloading
-		
+		// Prevent the page from reloading
+		event.preventDefault(); 
+
 		// Flag to indicate that the "close" button was clicked
 		var $closeButtonClicked = $(this).data('clicked', true);
 
