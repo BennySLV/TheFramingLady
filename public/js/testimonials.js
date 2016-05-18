@@ -86,7 +86,7 @@ $(function() {
 		var $submitButtonClicked = $(this).data('clicked', true);
 
 		// If the "submit" button was clicked
-		if($($submitButtonClicked)) {
+		if($submitButtonClicked) {
 			$('#testimonials-form').fadeOut('slow');
 			$('#form-close-button').removeClass('fa fa-times').hide().text(''); // hide the "close" button
 		}
@@ -101,7 +101,7 @@ $(function() {
 		var $closeButtonClicked = $(this).data('clicked', true);
 
 		// If the "close" button was clicked
-		if($($closeButtonClicked)) {
+		if($closeButtonClicked) {
 			$('#testimonials-form').fadeOut('slow');
 			$('#form-close-button').removeClass('fa fa-times').hide().text(''); // hide the "close" button
 		}
