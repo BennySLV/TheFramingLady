@@ -87,7 +87,7 @@
 			</div><br />
 			<div class="row">
 				<div class="col-sm-12">
-					<form action="testimonials-form-result.php" method="post" id="testimonials-form">
+					<form action="testimonials.php" method="post" id="testimonials-form">
 						<fieldset>
 							<legend>To submit your own testimonial, please fill in the form with the following details ("*" = required field)</legend>						
 							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /><span class="mandatory-field"> *</span> <span id="first-name-flag"><i aria-hidden="true"></i></span></p>

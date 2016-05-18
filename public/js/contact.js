@@ -21,7 +21,7 @@ $(function() {
 		event.preventDefault(); // Prevent the entire from reloading
 
 		// Hide the form
-		$('#contact-form').hide();
+		$('#contact-form').fadeOut('slow');
 	});
 
 	/* For all contact form text-inputs 
