@@ -79,9 +79,11 @@
 				<div class="col-sm-12">
 					<iframe id="youtube-video-intro" width="336" height="336" src="https://www.youtube.com/embed/E9DtOieHtd4" frameborder="0" allowfullscreen></iframe>
 					<p>In my spare time, I like travelling. With my favourite country being South Africa. I also like visiting art galleries as well as walking my dogs around the Holwell countryside.</p>
+					<p>If you want to know more about me, then please don't hesitate to <a href="contact.php">contact</a> me.</p>
+					<p>Find out what others have been saying about me too - check out my <a href="testimonials.php">testimonials</a>!</p>
 				</div>
 			</div>
-		</div>
+		</div> <!-- End of .jumbotron -->
 		<div class="panel panel-footer">
 			<div class="row" id="social-media">
 				<div class="col-sm-12">
