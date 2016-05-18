@@ -2,6 +2,28 @@
 
 // Shorthand for $(document).ready(function({ });
 $(function() {
+	// Initially hide the contact form when the page loads
+	$('#contact-form-inner').hide();
+
+	// Show the form when the user clicks the button
+	$('#contact-form-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire page from reloading
+
+		// Show the inner contact form
+		$('#contact-form-inner').fadeIn('slow');
+
+		// Display the close button at the bottom of the form
+		$('#form-close-button').addClass('fa fa-times').text(' Close');
+	});
+
+	// Hide the form when the user clicks the "close" button
+	$('#form-close-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire from reloading
+
+		// Hide the form
+		$('#contact-form-inner').hide();
+	});
+
 	/* For all contact form text-inputs 
 		Apply flags to indicate whether the specific input has been filled
 
