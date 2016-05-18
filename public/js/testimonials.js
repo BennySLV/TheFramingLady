@@ -4,7 +4,6 @@
 $(function() {
 	// Initially hide the testimonials form when the page first loads
 	$('#testimonials-form').hide();
-	$('#form-close-button').removeClass('fa fa-times').hide();
 
 	// First name text input
 	$('#first-name').on('blur', function() {
@@ -93,6 +92,8 @@ $(function() {
 
 	// When the user clicks the "close" button apply the same above functionality
 	$('#form-close-button').on('click', function() {
+		event.preventDefault(); // Prevent the page from reloading
+		
 		// Flag to indicate that the "close" button was clicked
 		var $closeButtonClicked = $(this).data('clicked', true);
 

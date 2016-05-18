@@ -95,10 +95,10 @@
 							<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" /><span class="mandatory-field"> *</span> <span id="email-flag"><i aria-hidden="true"></i></span></p>
 							<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40" value="<?php if(isset($_POST['confirmEmail'])) { echo $_POST['confirmEmail']; } ?>"><span class="mandatory-field"> *</span> <span id="confirm-email-flag"><i aria-hidden="true"></i></span></p>
 							<p><textarea id="comments" name="comments" placeholder="Comments..."></textarea><span class="mandatory-field"> *</span> <span id="comments-flag"><i aria-hidden="true"></i></span></p>
-							<input type="submit" name="submit" value="Submit" id="submit-button" />			
-						</fieldset>
-					</form>
-					<button id="form-close-button"><i aria-hidden="true"></i></button>
+							<input type="submit" name="submit" value="Submit" id="submit-button" />
+							<button id="form-close-button"><i aria-hidden="true"></i></button>			
+						</fieldset>						
+					</form>					
 					<?php 
 						/* PHP code for form handling */					
 					?>
