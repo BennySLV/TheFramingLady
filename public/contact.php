@@ -61,7 +61,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<h1>Contact</h1>
-					<p>Let's communicate!</p>
+					<p id="intro-text">Let's communicate!</p>
 					<p>Tel: 01462 713388</p>
 					<p>Email: <a href="mailto:bsilveston37@gmail.com?Subject=Hello%20The%20Framing%20Lady" target="top">am@theframinglady.com</a></p>
 					<h3>Address:</h3>
