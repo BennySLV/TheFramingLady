@@ -60,7 +60,7 @@
 					<img src="images/web-images/the-framing-lady-logo.jpg" />
 					<p id="intro-text">Welcome to <i>The Framing Lady</i> website!</p>
 					<img id="intro-image" src="images/web-images/hqdefault.jpg" />
-					<p id="intro-text">Need picture framing for your special moment? You've come to the right place!</p>
+					<p id="intro-text">Need high-quality picture-framing for your special moment? You've come to the right place!</p>
 				</div>
 				<div class="col-sm-6" id="main-text">
 					<p>Bespoke picture framing for Holwell and the surrounding areas.</p>
