@@ -166,7 +166,6 @@
 				</div>
 				<div class="col-sm-4" id="credits">
 					<p>Website designed and developed by <a href="http://www.bensilveston.com" target="_blank">Ben Silveston</a></p>
-					<p>Photography provided by <a href="http://www.natcowan.com" target="_blank">Nat Cowan</a></p>
 				</div>		
 			</div>							
 		</div> <!-- End of .panel panel-footer -->
