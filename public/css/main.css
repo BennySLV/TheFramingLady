@@ -1,4 +1,7 @@
-/* Main CSS file for The Framing Lady website */
+/* Main CSS file for The Framing Lady website
+
+	All styling below will apply to all pages
+*/
 
 /* Master of Break custom font */
 @font-face {
@@ -28,6 +31,12 @@
 @font-face {
 	font-family: Anke Print;
 	src: url(custom-fonts/Anke Print.ttf);
+}
+
+/* All Things Pink custom font */
+@font-face {
+	font-family: AllThingsPink;
+	src: url(custom-fonts/All Things Pink.ttf);
 }
 
 /* Standard design for all computer desktop/laptop screens */
@@ -120,5 +129,8 @@ a:hover {
 
 /* Smartphone portrait orientation */
 @media screen and (max-width: 500px) {
-
+	#menu {
+		margin-left: 10px;
+		display: inline-block;
+	}
 }
