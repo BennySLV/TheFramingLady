@@ -69,7 +69,7 @@
 					</p><br />					
 				</div>
 				<div class="col-sm-6">
-					<button id="contact-form-button">Alternatively, please fill in the following form</button>
+					<button id="contact-form-button">Click to open contact form</button>
 					<form action="contact.php" method="post" id="contact-form">
 						<fieldset id="contact-form-inner"> 
 						<legend>Mandatory fields are marked with an asterisk (*):</legend>					

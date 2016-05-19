@@ -59,7 +59,7 @@
 				<div class="col-sm-6">
 					<img src="images/web-images/the-framing-lady-logo.jpg" />
 					<p id="intro-text">Welcome to <i>The Framing Lady</i> website!</p>
-					<img src="images/web-images/hqdefault.jpg" />
+					<img id="intro-image" src="images/web-images/hqdefault.jpg" />
 					<p id="intro-text">Need picture framing for your special moment? You've come to the right place!</p>
 				</div>
 				<div class="col-sm-6" id="main-text">
