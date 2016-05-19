@@ -45,13 +45,13 @@ a:hover {
 
 .description {
 	font-family: Crab;
-	font-size: 36px;
+	font-family: 36px;
 	position: relative;
 	bottom: 0px;
 	padding-top: 75px;
 	padding-left: 60px;
 	padding-right: 60px;
-	width: 495px;
+	width: 485px;
 	height: 400px;
 	background-color: rgba(0, 0, 0, 0.3);
 	color: rgba(255, 255, 255, 1);

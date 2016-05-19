@@ -9,13 +9,25 @@
 /* Allena Script custom font */
 @font-face {
 	font-family: Alleana Script;
-	src: url(custom-fonts/Alleana Script.ttf);
+	src: url(custom-fonts/Alleana Script.ttf) format('truetype');
 }
 
 /* Crab Regular custom font */
 @font-face {
 	font-family: Crab;
 	src: url(custom-fonts/Crab.ttf);
+}
+
+/* Dadhand Regular custom font */
+@font-face {
+	font-family: DadhandRegular;
+	src: url(custom-fonts/dadha___.ttf);
+}
+
+/* Anke Print custom font */
+@font-face {
+	font-family: Anke Print;
+	src: url(custom-fonts/Anke Print.ttf);
 }
 
 /* Standard design for all computer desktop/laptop screens */
@@ -34,8 +46,8 @@
 #slogan {
 	float: right;
 	margin-top: 20px;
-	font-family: Alleana Script;
-	font-size: 48px;
+	font-family: Anke Print;
+	font-size: 36px;
 	font-style: italic;
 	font-weight: bold;
 }
