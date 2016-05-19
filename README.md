@@ -1,6 +1,6 @@
 <h2>Synopsis</h2>
 
-<p>This project is a prototype website for The Framing Lady. The website is designed using HTML, CSS and Bootstrap and will be developed using JavaScript/jQuery as well as PHP and MySQL.</p>
+<p>This project is a prototype website for The Framing Lady - a former picture framing business. The website is designed using HTML, CSS and Bootstrap and will be developed using JavaScript/jQuery as well as PHP and MySQL.</p>
 
 <h2>Motivation</h2>
 
