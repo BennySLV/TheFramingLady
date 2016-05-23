@@ -70,9 +70,9 @@
 				</div>
 				<div class="col-sm-6">
 					<button id="contact-form-button">Click to open contact form</button>
-					<form action="contact.php" method="post" id="contact-form">
+					<form action="contact.php" method="post" id="contact-form" autocomplete="off">
 						<fieldset id="contact-form-inner"> 
-						<legend>Mandatory fields are marked with an asterisk (*):</legend>					
+						<legend>Please fill in all mandatory fields - marked with an asterisk (*):</legend>					
 							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" /><span class="mandatory-field"> *</span> <span id="first-name-flag"><i aria-hidden="true"></i></span><p>
 							<p><input id="surname" type="text" name="surname" placeholder="Surname" /> <span id="surname-flag"><i aria-hidden="true"></i></span></p>
 							<p><input id="email" type="email" name="email" placeholder="Email Address" /><span class="mandatory-field"> *</span> <span id="email-flag"><i aria-hidden="true"></i></span></p>
