@@ -74,6 +74,7 @@
 						<li>Needlework</li>
 					</ul>
 					<p>Please feel to look around and see what I can do for you!</p>
+					<p>For more information about The Framing Lady, please check out the <a href="about.php">about</a> page.</p>
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->
