@@ -36,7 +36,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- Logo -->
-					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg"></a>
+					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.png"></a>
 				</div>
 				<div class="col-sm-8">
 					<span id="slogan">makes your ART sing!</span>

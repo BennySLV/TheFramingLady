@@ -36,7 +36,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 				<!-- Logo -->
-					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.jpg" /></a>
+					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.png" /></a>
 				</div>
 				<div class="col-sm-8">
 					<span id="slogan">makes your ART sing!</span>
@@ -57,7 +57,7 @@
 		<div class="jumbotron">
 			<div class="row">
 				<div class="col-sm-6">
-					<img src="images/web-images/the-framing-lady-logo.jpg" />
+					<img src="images/web-images/the-framing-lady-logo.png" />
 					<p id="intro-text">Welcome to <i>The Framing Lady</i> website!</p>
 					<img id="intro-image" src="images/web-images/hqdefault.jpg" />
 					<p id="intro-text">Need high-quality picture-framing for your special moment? You've come to the right place!</p>
