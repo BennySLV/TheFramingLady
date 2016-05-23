@@ -81,10 +81,12 @@
 							<input type="submit" name="submit" value="Submit" id="submit-button" />
 							<button id="form-close-button"><i aria-hidden="true"></i></button>
 						</fieldset>						
-					</form>					
+					</form>		
 					<?php 
-						// PHP code for form handling											
-					?><br />
+						// PHP code for form handling
+						//echo "<br />Hello World";											
+					?>
+					<br />
 				</div>
 				<div class="row">
 					<div class="col-sm-12">

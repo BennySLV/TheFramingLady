@@ -45,7 +45,7 @@
 	background-color: #F5F5F5;
 	border: 2px solid black;
 	border-radius: 20px;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .panel-footer {
@@ -80,7 +80,7 @@ a:hover {
 
 #main-text {
 	float: right;
-	padding-top: 160px; 
+	padding-top: 155px; 
 }
 
 #intro-text {
