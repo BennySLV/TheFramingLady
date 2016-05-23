@@ -10,10 +10,18 @@
 	border: 1px solid black;
 	border-collapse: collapse;
 	width: 100%;
+	max-width: 100%;
+	height: auto;
+	max-height: auto;
+	margin: auto;
 }
 
-#testimonials-table th, td {
+#testimonials-table th {
 	padding: 5px;
+}
+
+#testimonials-table td {
+	padding: 2px;
 }
 
 #testimonials-table td:nth-child(3) {

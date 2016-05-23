@@ -62,7 +62,6 @@
 }
 
 #menu {
-	padding-left: 400px;
 	float: right;
 }
 
@@ -72,6 +71,7 @@
 	text-decoration: none;
 	padding: 10px;
 	font-size: 18px;
+	display: inline;
 }
 
 a:hover {
@@ -114,20 +114,56 @@ a:hover {
 
 /* Tablet landscape orientation */
 @media screen and (max-width: 1040px) {
-
+	#menu a {
+		display: inline;
+		float: left;
+	}
 }
 
 /* Tablet portrait orientation */
 @media screen and (max-width: 800px) {
-
+	#menu a {
+		display: inline-block;
+		float: left;
+	}
 }
 
 /* Smartphone landscape orientation */
 @media screen and (max-width: 768px) {
+	#menu a {
+		display: inline-block;
+		float: left;
+	}
 
+	#menu a:hover {
+		font-weight: normal;
+		text-decoration: none;
+	}
+
+	#menu a:active {
+		font-weight: bold;
+	}
 }
 
 /* Smartphone portrait orientation */
 @media screen and (max-width: 500px) {
-	
+	table {
+		margin: auto;
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	#menu a {
+		display: block;
+		float: left;
+	}
+
+	#menu a:hover {
+		font-weight: none;
+		text-decoration: none;
+	}
+
+	#menu a:active {
+		font-weight: bold;
+	}
 }
