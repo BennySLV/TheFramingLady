@@ -149,6 +149,10 @@ a:hover {
 	#menu a:active {
 		font-weight: bold;
 	}
+
+	#main-text {
+		padding-top: 0;
+	}
 }
 
 /* Smartphone portrait orientation */
