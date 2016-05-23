@@ -29,7 +29,7 @@
 	<script type="text/javascript" src="js/contact.js"></script>
 
 	<!-- Site Icon -->
-	<link rel="icon" type="image/png" href="images/web-images/site-icon.png">
+	<link rel="icon" type="image/png" href="images/web-images/site-icon.png" />
 
 	<title>Contact | The Framing Lady</title>
 </head>
