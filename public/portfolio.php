@@ -26,7 +26,7 @@
 	<script type="text/javascript" src="js/portfolio.js"></script>
 
 	<!-- Site Icon -->
-	<link rel="icon" type="image/png" href="images/web-images/site-icon.png">
+	<link rel="icon" type="image/png" href="images/web-images/site-icon.png" />
 
 	<title>Portfolio | The Framing Lady</title>
 </head>
@@ -36,7 +36,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- Logo -->
-					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.png"></a>
+					<a href="index.php"><img src="images/web-images/the-framing-lady-logo.png" /></a>
 				</div>
 				<div class="col-sm-8">
 					<span id="slogan">makes your ART sing!</span>
