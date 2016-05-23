@@ -130,6 +130,12 @@ a:hover {
 
 /* Smartphone landscape orientation */
 @media screen and (max-width: 768px) {
+	table {
+		margin: auto;
+		max-width: 100%;
+		max-height: auto;
+	}
+
 	#menu a {
 		display: inline-block;
 		float: left;
@@ -140,7 +146,7 @@ a:hover {
 		text-decoration: none;
 	}
 
-	#menu a:active {
+	#menu a:active {t
 		font-weight: bold;
 	}
 }
@@ -165,5 +171,9 @@ a:hover {
 
 	#menu a:active {
 		font-weight: bold;
+	}
+
+	#main-text {
+		padding-top: 0;
 	}
 }
