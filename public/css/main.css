@@ -156,13 +156,7 @@ a:hover {
 }
 
 /* Smartphone portrait orientation */
-@media screen and (max-width: 500px) {
-	table {
-		margin: auto;
-		max-width: 100%;
-		max-height: auto;
-	}
-
+@media screen and (max-width: 500px) {	
 	#menu a {
 		display: block;
 		float: left;

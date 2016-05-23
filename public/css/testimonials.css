@@ -21,7 +21,7 @@
 }
 
 #testimonials-table td {
-	padding: 2px;
+	padding: 5px;
 }
 
 #testimonials-table td:nth-child(3) {
@@ -85,4 +85,34 @@ input:focus {
 
 #form-close-button:active {
 	background-color: rgba(226, 19, 19, 0.6);
+}
+
+/* Responsive Design */
+
+/* Smartphone landscape orientation */
+@media screen and (max-width: 768px) {
+	table {
+		border: border-collapse;
+		margin: auto;
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	#testimonials-table td {
+		padding: 3px;
+	}
+}
+
+/* Smartphone portrait orientation */
+@media screen and (max-width: 500px) {
+	table {
+		border: border-collapse;
+		margin: auto;
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	#testimonials-table td {
+		padding: 2px;
+	}
 }
