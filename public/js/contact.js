@@ -28,7 +28,7 @@ $(function() {
 		Apply flags to indicate whether the specific input has been filled
 
 			- For empty boxes, mark with an "X"
-			- For filled boxes, mark with a "check" (i.e. tick)
+			- For filled boxes, mark with a "check" (i.e. tick) 
 	*/
 
 	// First name text input
@@ -55,10 +55,10 @@ $(function() {
 		}
 	});
 
-	// Email address text input
+	// Email address regex - contains all the necessary characters for email addresses:
 	$('#email').on('blur', function() {
 		// If input text-box is empty then insert the "red X" indicator
-		if(!$.trim(this.value).length) {			
+		if(!$.trim(this.value).length) {
 			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
 		}
 		// If the input text-box is NOT empty then insert the "green tick" indicator
@@ -89,7 +89,7 @@ $(function() {
 		else {
 			$('#message-flag').removeClass('fa fa-times').addClass('fa fa-check');
 		}
-	});
+	});	
 
 	// Submit button functionality
 	$('#submit-button').on('submit', function(event) {
