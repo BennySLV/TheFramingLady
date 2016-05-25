@@ -83,8 +83,7 @@
 						</fieldset>						
 					</form>		
 					<?php 
-						// PHP code for form handling
-						//echo "<br />Hello World";											
+						// PHP code for form handling - to be inserted soon	
 					?>
 					<br />
 				</div>

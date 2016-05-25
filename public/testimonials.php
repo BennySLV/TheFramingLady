@@ -100,7 +100,7 @@
 						</fieldset>						
 					</form>					
 					<?php 
-						/* PHP code for form handling */					
+						// PHP code for form handling - to be inserted soon					
 					?>
 				</div>
 			</div>
