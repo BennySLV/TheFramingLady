@@ -77,7 +77,7 @@
 							<p><input id="surname" type="text" name="surname" placeholder="Surname" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
 							<p><input id="email" type="email" name="email" placeholder="Email Address" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
 							<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>
-							<p><textarea id="message" name="message" placeholder="Message..."></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>
+							<p><textarea cols="27" rows="10" id="message" name="message" placeholder="Message..."></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>
 							<input type="submit" name="submit" value="Send" id="submit-button" />
 							<button id="form-close-button"><i aria-hidden="true"></i></button>
 						</fieldset>						
