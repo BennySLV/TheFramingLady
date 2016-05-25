@@ -89,12 +89,12 @@
 				<div class="col-sm-12">
 					<form action="testimonials.php" method="post" id="testimonials-form" autocomplete="off">
 						<fieldset>
-							<legend>To submit your own testimonial, please fill in the form with the following details ("*" = required field)</legend>						
-							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /><span class="mandatory-field"> *</span> <span id="first-name-flag"><i aria-hidden="true"></i></span></p>
-							<p><input id="surname" type="text" name="surname" placeholder="Surname" maxlength="20" value="<?php if(isset($_POST['surname'])) { echo $_POST['surname']; } ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span></p>
-							<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" /><span class="mandatory-field"> *</span> <span id="email-flag"><i aria-hidden="true"></i></span></p>
-							<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40" value="<?php if(isset($_POST['confirmEmail'])) { echo $_POST['confirmEmail']; } ?>"><span class="mandatory-field"> *</span> <span id="confirm-email-flag"><i aria-hidden="true"></i></span></p>
-							<p><textarea id="comments" name="comments" placeholder="Comments..."></textarea><span class="mandatory-field"> *</span> <span id="comments-flag"><i aria-hidden="true"></i></span></p>
+							<legend>To submit your own testimonial, please fill in the form with the following details:</legend>						
+							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
+							<p><input id="surname" type="text" name="surname" placeholder="Surname" maxlength="20" value="<?php if(isset($_POST['surname'])) { echo $_POST['surname']; } ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
+							<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
+							<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40" value="<?php if(isset($_POST['confirmEmail'])) { echo $_POST['confirmEmail']; } ?>"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>
+							<p><textarea id="comments" name="comments" placeholder="Comments..."></textarea> <span id="comments-flag"><i aria-hidden="true"></i></span> <span id="comments-validation"></span></p>
 							<input type="submit" name="submit" value="Submit" id="submit-button" />
 							<button id="form-close-button"><i aria-hidden="true"></i></button>			
 						</fieldset>						

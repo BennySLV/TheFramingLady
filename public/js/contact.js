@@ -41,7 +41,7 @@ $(function() {
 		// First name text input value
 		var $firstNameInput = $(this).val();
 
-		// If input text-box is NOT empty then insert the "green tick" indicator
+		// If first name input text-box is NOT empty then insert the "green tick" indicator
 		if($.trim(this.value).length) {
 			if($firstNameRegex.test($firstNameInput)) {
 				$('#first-name-flag').removeClass('fa fa-times').addClass('fa fa-check');
