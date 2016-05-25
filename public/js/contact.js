@@ -1,7 +1,9 @@
 /* JavaScript/jQuery for the Contact page */
 
 // Shorthand for $(document).ready(function({ });
-$(function() {
+$(function() {	
+	/* Contact Form Button - basic functionality */
+
 	// Initially hide the contact form when the page loads
 	$('#contact-form').hide();
 
@@ -31,65 +33,138 @@ $(function() {
 			- For filled boxes, mark with a "check" (i.e. tick) 
 	*/
 
+	// First Name Regular Expression
+	var $firstNameRegex = new RegExp(/^[a-zA-Z -]{3,16}$/);
+
 	// First name text input
 	$('#first-name').on('blur', function() {
-		// If input text-box is empty then insert the "red X" indicator
-		if(!$.trim(this.value).length) {
-			$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
+		// First name text input value
+		var $firstNameInput = $(this).val();
+
+		// If input text-box is NOT empty then insert the "green tick" indicator
+		if($.trim(this.value).length) {
+			if($firstNameRegex.test($firstNameInput)) {
+				$('#first-name-flag').removeClass('fa fa-times').addClass('fa fa-check');
+				$('#first-name-validation').removeClass('validation-fail').addClass('validation-pass').text(' First name is valid!');	
+			}
+			else { // If the first name contains illegal characters
+				$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
+				$('#first-name-validation').removeClass('validation-pass').addClass('validation-fail').text(' First name is not valid!');
+			}			
 		}
-		// If the input text-box is NOT empty then insert the "green tick" indicator
+		// If the input text-box is empty then insert the "red X" indicator
 		else {
-			$('#first-name-flag').removeClass('fa fa-times').addClass('fa fa-check');
+			$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#first-name-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter first name!');						
 		}			
 	});
 
+	// Surname Regular Expression
+	var $surnameRegex = new RegExp(/^[a-zA-Z -]{3,16}$/);
+	
 	// Surname text input
 	$('#surname').on('blur', function() {
-		// If input text-box is empty then insert the "red X" indicator
-		if(!$.trim(this.value).length) {			
-			$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
+		// First name text input value
+		var $surnameInput = $(this).val();
+
+		// If input text-box is NOT empty then insert the "green tick" indicator
+		if($.trim(this.value).length) {
+			if($surnameRegex.test($surnameInput)) {
+				$('#surname-flag').removeClass('fa fa-times').addClass('fa fa-check');
+				$('#surname-validation').removeClass('validation-fail').addClass('validation-pass').text(' Surname is valid!');	
+			}
+			else { // If the first name contains illegal characters
+				$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
+				$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Surname is not valid!');
+			}			
 		}
-		// If the input text-box is NOT empty then insert the "green tick" indicator
+		// If the input text-box is empty then insert the "red X" indicator
 		else {
-			$('#surname-flag').removeClass('fa fa-times').addClass('fa fa-check');
+			$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter surname!');						
 		}
 	});
 
-	// Email address regex - contains all the necessary characters for email addresses:
-	$('#email').on('blur', function() {
-		// If input text-box is empty then insert the "red X" indicator
-		if(!$.trim(this.value).length) {
-			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+	// Email address Regular Expression
+	var $emailRegex = new RegExp(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/);
+
+	// Email Address input field
+	$('#email').on('blur', function() {		
+		// Email address input value
+		var $emailInput = $(this).val();
+
+		/* If the email input text-box is NOT empty AND if the email is valid 
+			(i.e. contains the necessary characters ('@', '.com,.org,etc')) then insert the "green tick" indicator
+		*/			
+		if($.trim($emailInput).length) {
+			if($emailRegex.test($emailInput)) {
+				$('#email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+				$('#email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!')				
+			}
+			else { // If the email address DOES NOT contain necessary regex characters
+				$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+				$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Email address is not valid!');
+			}											
 		}
-		// If the input text-box is NOT empty then insert the "green tick" indicator
+		// If the email input text-box is empty then insert the "red X" indicator
 		else {
-			$('#email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');				
 		}
 	});
 
 	// Confirm-Email address text input
 	$('#confirm-email').on('blur', function() {
-		// If input text-box is empty then insert the "red X" indicator
-		if(!$.trim(this.value).length) {
-			$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+		// Email address input value
+		var $confirmEmailInput = $(this).val();
+
+		/* If the confirmed email input text-box is NOT empty AND if the email is valid 
+			(i.e. contains the necessary characters ('@', '.com,.org,etc')) then insert the "green tick" indicator
+		*/			
+		if($.trim($confirmEmailInput).length) {
+			if($emailRegex.test($confirmEmailInput)) {
+				$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+				$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!')				
+			}
+			else { // If the confirmed email address DOES NOT contain necessary regex characters
+				$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+				$('#confirm-email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Email address is not valid!');
+			}											
 		}
-		// If the input text-box is NOT empty then insert the "green tick" indicator
+		// If the confirmed email input text-box is empty then insert the "red X" indicator
 		else {
-			$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+			$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#confirm-email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');				
 		}
 	});
 
-	// Testimonial message text-area
+	// Contact message Regular Expression
+	var $messageRegex = new RegExp(/[a-zA-Z0-9 ]+\w\W$/);
+
+	// Contact message text-area
 	$('#message').on('blur', function() {
-		// If input text-box is empty then insert the "red X" indicator
-		if(!$.trim(this.value).length) {
-			$('#message-flag').removeClass('fa fa-check').addClass('fa fa-times');
+		// Message text input
+		var $messageInput = $(this).val();
+
+		/* If the message input text-box is NOT empty AND if the email is valid 
+			(i.e. contains the necessary characters) then insert the "green tick" indicator and message
+		*/
+		if($.trim($messageInput).length) {
+			if($messageRegex.test($messageInput)) {
+				$('#message-flag').removeClass('fa fa-times').addClass('fa fa-check');
+				$('#message-validation').removeClass('validation-fail').addClass('validation-pass').text(' Message is valid!');
+			}
+			else { // If any illegal characters are found in the contact message
+				$('#message-flag').removeClass('fa fa-check').addClass('fa fa-times');
+				$('#message-validation').removeClass('validation-pass').addClass('validation-fail').text(' Message is not valid!');
+			}			
 		}
 		// If the input text-box is NOT empty then insert the "green tick" indicator
 		else {
-			$('#message-flag').removeClass('fa fa-times').addClass('fa fa-check');
+			$('#message-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#message-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter message!');
 		}
-	});	
+	});
 
 	// Submit button functionality
 	$('#submit-button').on('submit', function(event) {
@@ -103,5 +178,5 @@ $(function() {
 		if($submitButtonClicked) {
 			$('#contact-form').fadeOut('slow');
 		}
-	});
+	}); 
 });
