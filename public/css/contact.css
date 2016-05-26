@@ -41,14 +41,16 @@
 	background-color: rgba(95, 216, 14, 0.6);
 }
 
-#contact-form-inner {
-	border: 1px solid black;
-	border-radius: 15px;
-	padding: 10px;	
-}
-
 input:focus {
 	background-color: #F1F99B;
+}
+
+input {
+	font-size: 16px;
+}
+
+textarea {
+	font-size: 16px;
 }
 
 .fa-times {
@@ -76,6 +78,7 @@ input:focus {
 #message {
 	max-width: 100%;
 	max-height: auto;
+	float: right;
 }
 
 #form-close-button {

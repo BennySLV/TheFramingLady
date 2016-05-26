@@ -71,15 +71,19 @@
 				<div class="col-sm-6">
 					<button id="contact-form-button">Click to open contact form</button>
 					<form action="contact.php" method="post" id="contact-form" autocomplete="off">
-						<fieldset id="contact-form-inner"> 
-						<legend>Please fill in all fields:</legend>	
+						<fieldset> 
+						<legend>Please fill in all fields:</legend>
+						<div class="col-sm-6">	
 							<p><input id="first-name" type="text" name="firstName" placeholder="First Name" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span><p>
 							<p><input id="surname" type="text" name="surname" placeholder="Surname" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
 							<p><input id="email" type="email" name="email" placeholder="Email Address" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
 							<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>
-							<p><textarea cols="27" rows="8" id="message" name="message" placeholder="Message..."></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>
 							<input type="submit" name="submit" value="Send" id="submit-button" />
-							<button id="form-close-button"><i aria-hidden="true"></i></button>
+						</div>
+						<div class="col-sm-6">
+							<p><textarea cols="27" rows="8" id="message" name="message" placeholder="Message..."></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>
+							<button id="form-close-button"><i aria-hidden="true"></i></button>				
+						</div>							
 						</fieldset>						
 					</form>		
 					<?php 
