@@ -59,7 +59,7 @@
 				<div class="col-sm-12">
 				<h1>About The Framing Lady</h1>					
 					<p id="intro-text">Hi! I'm Anne-Marie, a.k.a The Framing Lady!<img id="profile-pic" src="images/web-images/the-framing-lady-profile-pic.jpg" /></p>
-					<p>Back in 2010, I discovered some old memorabilia that I wanted to preserve. However there was no way to properly preserve it in order to keep my prized possession. So I therefore started The Framing Lady to solve this constant issue.</p>
+					<p id="bio">Back in 2010, I discovered some old memorabilia that I wanted to preserve. However there was no way to properly preserve it in order to keep my prized possession. So I therefore started The Framing Lady to solve this constant issue.</p>
 					<p>My method and approach are simple. The method is to choose the right mount with the right moulding to suit. The approach - to keep it simple:
 					<ol>
 						<li>The picture</li>
@@ -78,7 +78,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<iframe id="youtube-video-intro" width="336" height="336" src="https://www.youtube.com/embed/E9DtOieHtd4" frameborder="0" allowfullscreen></iframe>
-					<p>In my spare time, I like travelling. With my favourite country being South Africa. I also like visiting art galleries as well as walking my dogs around the Holwell countryside.</p>
+					<p id="additional-info">In my spare time, I like travelling. With my favourite country being South Africa. I also like visiting art galleries as well as walking my dogs around the Holwell countryside.</p>
 					<p>If you want to know more, then please don't hesitate to <a href="contact.php">contact</a> me.</p>
 					<p>Find out what others have been saying about me too - check out my <a href="testimonials.php">testimonials</a>!</p>
 				</div>
