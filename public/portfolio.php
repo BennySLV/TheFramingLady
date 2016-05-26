@@ -111,36 +111,36 @@
 			<div class="video-gallery">
 				<div class="row">
 					<div class="col-sm-4">						
-						<iframe id="video-1" width="250" height="250" src="https://www.youtube.com/embed/-gZUHlCnm9A" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-1" width="350" height="350" src="https://www.youtube.com/embed/-gZUHlCnm9A" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-sm-4">
-						<iframe id="video-2" width="250" height="250" src="https://www.youtube.com/embed/oW_pYF2cUAM" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-2" width="350" height="350" src="https://www.youtube.com/embed/oW_pYF2cUAM" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-sm-4">
-						<iframe id="video-3" width="250" height="250" src="https://www.youtube.com/embed/cSGgeduMuXQ" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-3" width="350" height="350" src="https://www.youtube.com/embed/cSGgeduMuXQ" frameborder="0" allowfullscreen></iframe>
 					</div>					
-				</div> <!-- End of first video-gallery row -->
+				</div> <!-- End of first .video-gallery row -->
 				<div class="row">
 					<div class="col-sm-4">
-						<iframe id="video-4" width="250" height="250" src="https://www.youtube.com/embed/yBT5bSQHY0E" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-4" width="350" height="350" src="https://www.youtube.com/embed/yBT5bSQHY0E" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-sm-4">
-						<iframe id="video-5" width="250" height="250" src="https://www.youtube.com/embed/a3rN0sKy-YE" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-5" width="350" height="350" src="https://www.youtube.com/embed/a3rN0sKy-YE" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-sm-4">
-						<iframe id="video-6" width="250" height="250" src="https://www.youtube.com/embed/iA4KOz68IZQ" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-6" width="350" height="350" src="https://www.youtube.com/embed/iA4KOz68IZQ" frameborder="0" allowfullscreen></iframe>
 					</div>
-				</div> <!-- End of second video-gallery row -->
+				</div> <!-- End of second .video-gallery row -->
 				<div class="row">
 					<div class="col-sm-4">
-						<iframe id="video-7" width="250" height="250" src="https://www.youtube.com/embed/BKsk7l47R9g" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-7" width="350" height="350" src="https://www.youtube.com/embed/BKsk7l47R9g" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-sm-4">
-						<iframe id="video-8" width="250" height="250" src="https://www.youtube.com/embed/Vn8EL3HbsR0" frameborder="0" allowfullscreen></iframe>
+						<iframe id="video-8" width="350" height="350" src="https://www.youtube.com/embed/Vn8EL3HbsR0" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-sm-4">
-						<iframe id="video-9" width="250" height="250" src="https://www.youtube.com/embed/8dtitER5VmY" frameborder="0" allowfullscreen></iframe>
-					</div>
+						<iframe id="video-9" width="350" height="350" src="https://www.youtube.com/embed/8dtitER5VmY" frameborder="0" allowfullscreen></iframe>
+					</div> <!-- End of third .video-gallery row -->
 				</div> 
 			</div> <!-- End of .video-gallery -->
 			<div class="row">

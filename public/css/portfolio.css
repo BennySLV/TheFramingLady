@@ -21,7 +21,7 @@ a:hover {
 	
 	/* Responsive images */
 	max-width: 100%;
-	height: auto;
+	max-height: auto;
 }
 
 #img-3, #img-4, #img-5, #img-6 {
@@ -77,39 +77,45 @@ a:hover {
 }
 
 .video-gallery {
-	/* Enable responsive design */
+	margin: 0 auto;
 	padding: 10px;
-	max-width: 100%;
-	height: auto;
 	border: 1px solid black;
 	border-radius: 10px;
+	display: inline-block;
+
+	/* Enable responsive design */
+	max-width: 100%;
+	max-height: auto;
 }
 
 #video-4, #video-5, #video-6, #video-7, #video-8, #video-9 {
-	margin-top: 20px;
 	/* Enable responsive design */
 	max-width: 100%;
-	height: auto;
+	max-height: auto;
+	margin: 0 auto;
 	padding: auto;
 }
 
 #video-1, #video-4, #video-7 {
 	/* Enable responsive design */
 	max-width: 100%;
-	height: auto;
-	padding: auto;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
 #video-2, #video-5, #video-8 {
 	/* Enable responsive design */
 	max-width: 100%;
-	height: auto;
-	padding: auto;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
 #video-3, #video-6, #video-9 {
 	/* Enable responsive design */
 	max-width: 100%;
-	height: auto;
-	padding: auto;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
 }
