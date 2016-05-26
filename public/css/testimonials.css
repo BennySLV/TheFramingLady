@@ -70,12 +70,14 @@ input:focus {
 	border-radius: 2px;
 	font-size: 12px;
 	background-color: rgba(226, 19, 19, 0.6);
+	padding: 2px;
 }
 
 .validation-pass {
 	border-radius: 2px;
 	font-size: 12px;
 	background-color: rgba(95, 216, 14, 0.6);
+	padding: 2px;
 }
 
 #comments {
