@@ -82,7 +82,7 @@
 							<td>A great service! Anne-Marie understood my requirements straight away and delivered the work to a very high standard. Exactly what I was looking for. I can't recommend her highly enough.</td>
 						</tr>
 					</table><br />
-					<button id="submit-testimonial-button">Submit your own testimonial</button>
+					<button id="submit-testimonial-button">Click here to submit your own testimonial</button>
 				</div>
 			</div><br />
 			<div class="row">
