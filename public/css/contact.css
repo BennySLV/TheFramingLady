@@ -71,11 +71,17 @@ input:focus {
 	background-color: rgba(95, 216, 14, 0.6);
 }
 
+#message {
+	max-width: 100%;
+	max-height: auto;
+}
+
 #form-close-button {
 	float: right;
 	border-radius: 15px;
 	color: black;
-	padding-bottom: 5px; 
+	padding-bottom: 5px;
+	margin-top: 10px; 
 }
 
 #form-close-button:active {
@@ -86,6 +92,7 @@ input:focus {
 	border-radius: 15px;
 	font-size: 18px;
 	background-color: rgba(226, 19, 19, 0.6);	
+	margin-top: 10px;
 }
 
 #submit-button:active {
