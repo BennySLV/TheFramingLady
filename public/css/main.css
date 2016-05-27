@@ -3,16 +3,10 @@
 	All styling below will apply to all pages
 */
 
-/* Master of Break custom font */
-@font-face {
-    font-family: masterOfBreak;
-    src: url(custom-fonts/master_of_break.ttf);    
-}
-
 /* Allena Script custom font */
 @font-face {
 	font-family: Alleana Script;
-	src: url(custom-fonts/Alleana Script.ttf) format('truetype');
+	src: url(custom-fonts/Alleana Script.ttf);
 }
 
 /* Crab Regular custom font */
@@ -21,22 +15,22 @@
 	src: url(custom-fonts/Crab.ttf);
 }
 
-/* Dadhand Regular custom font */
-@font-face {
-	font-family: DadhandRegular;
-	src: url(custom-fonts/dadha___.ttf);
-}
-
 /* Anke Print custom font */
 @font-face {
 	font-family: Anke Print;
-	src: url(custom-fonts/Anke Print.ttf);
+	src: url(custom-fonts/Anke_Print.ttf);
 }
 
-/* All Things Pink custom font */
+/* MontereyFLF custom-font */
 @font-face {
-	font-family: AllThingsPink;
-	src: url(custom-fonts/All Things Pink.ttf);
+	font-family: MontereyFLF;
+	src: url(custom-fonts/MontereyFLF.ttf);
+}
+
+/* MontereyFLF (medium) custom-font */
+@font-face {
+	font-family: MontereyMediumFLF;
+	src: url(custom-fonts/MontereyMediumFLF.ttf);
 }
 
 /* Standard design for all computer desktop/laptop screens */
@@ -45,6 +39,15 @@
 	background-color: #F5F5F5;
 	border: 2px solid black;
 	border-radius: 20px;
+	font-size: 16px;
+}
+
+.jumbotron h1 {
+	font-family: MontereyMediumFLF;
+	font-size: 50px;
+}
+
+.jumbotron p {
 	font-size: 16px;
 }
 
