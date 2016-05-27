@@ -78,7 +78,7 @@ textarea {
 #message {
 	max-width: 100%;
 	max-height: auto;
-	float: right;
+	float: left;
 }
 
 #form-close-button {
