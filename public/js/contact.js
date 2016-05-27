@@ -41,8 +41,10 @@ $(function() {
 		// First name text input value
 		var $firstNameInput = $(this).val();
 
-		// If first name input text-box is NOT empty then insert the "green tick" indicator
-		if($.trim(this.value).length) {
+		/* If the first name input text-box is NOT empty AND if the first name is valid 
+			(i.e. contains the necessary characters) then insert the "green tick" indicator
+		*/
+		if($.trim($firstNameInput).length) {
 			if($firstNameRegex.test($firstNameInput)) {
 				$('#first-name-flag').removeClass('fa fa-times').addClass('fa fa-check');
 				$('#first-name-validation').removeClass('validation-fail').addClass('validation-pass').text(' First name is valid!');	
@@ -64,16 +66,18 @@ $(function() {
 	
 	// Surname text input
 	$('#surname').on('blur', function() {
-		// First name text input value
+		// Surname text input value
 		var $surnameInput = $(this).val();
 
-		// If input text-box is NOT empty then insert the "green tick" indicator
-		if($.trim(this.value).length) {
+		/* If the surname input text-box is NOT empty AND if the surname is valid 
+			(i.e. contains the necessary characters) then insert the "green tick" indicator
+		*/
+		if($.trim($surnameInput).length) {
 			if($surnameRegex.test($surnameInput)) {
 				$('#surname-flag').removeClass('fa fa-times').addClass('fa fa-check');
 				$('#surname-validation').removeClass('validation-fail').addClass('validation-pass').text(' Surname is valid!');	
 			}
-			else { // If the first name contains illegal characters
+			else { // If the surname contains illegal characters
 				$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
 				$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Surname is not valid!');
 			}			
@@ -113,7 +117,7 @@ $(function() {
 		}
 	});
 
-	// Confirm-Email address text input
+	// Confirmed email address text input
 	$('#confirm-email').on('blur', function() {
 		// Email address input value
 		var $confirmEmailInput = $(this).val();
