@@ -63,7 +63,7 @@
 					<h1>Contact</h1>
 					<p id="intro-text">Let's communicate!</p>
 					<p>Tel: 01462 713388</p>
-					<p>Email: <a href="mailto:bsilveston37@gmail.com?Subject=Hello%20The%20Framing%20Lady" target="top">am@theframinglady.com</a></p>
+					<p>Email: <a href="mailto:am@theframinglady.com?Subject=Hello%20The%20Framing%20Lady" target="top">am@theframinglady.com</a></p>
 					<h3>Address:</h3>
 					<p id="address">3 St. Peter's Green,<br />Holwell,<br />Hitchin,<br />Hertfordshire,<br />SG5 3SW<br />United Kingdom
 					</p><br />					
@@ -112,7 +112,7 @@
 					<a href="https://twitter.com/theframinglady" target="_blank"><i class="fa fa-twitter-square" id="twitter-icon" aria-hidden="true"></i></a>
 					<a href="https://uk.linkedin.com/in/theframinglady" target="_blank"><i class="fa fa-linkedin-square" id="linkedin-icon" aria-hidden="true"></i></a>
 					<a href="https://uk.pinterest.com/theframinglady/" target="_blank"><i class="fa fa-pinterest-square" id="pinterest-icon" aria-hidden="true"></i></a>
-					<a href="mailto:bsilveston37@gmail.com?Subject=Hello%20The%20Framing%20Lady"><i class="fa fa-envelope-square" id="email-icon" aria-hidden="true"></i></a>
+					<a href="mailto:am@theframinglady.com?Subject=Hello%20The%20Framing%20Lady"><i class="fa fa-envelope-square" id="email-icon" aria-hidden="true"></i></a>
 				</div>
 			</div><br />									
 			<div class="row">
