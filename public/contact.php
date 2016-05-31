@@ -69,7 +69,7 @@
 					</p><br />					
 				</div>
 				<div class="col-sm-6">
-					<button id="contact-form-button">Click to open contact form</button>
+					<button id="contact-form-button">Open contact form</button>
 					<form action="contact.php" method="post" id="contact-form" autocomplete="off">
 						<fieldset> 
 						<legend>Please fill in all fields:</legend>
@@ -93,7 +93,17 @@
 						</fieldset>						
 					</form>		
 					<?php 
-						// PHP code for form handling - to be inserted soon	
+						# Contact Form Handling
+						
+						// Check for form submission:
+						if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+							// Connect to the database
+							require('includes/mysqli_connect.php');
+
+							// Store all possible errors
+							$errors = array();
+						}			
 					?>
 					<br />
 				</div>
