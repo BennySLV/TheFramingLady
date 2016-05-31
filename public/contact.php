@@ -93,17 +93,7 @@
 						</fieldset>						
 					</form>		
 					<?php 
-						# Contact Form Handling
-						
-						// Check for form submission:
-						if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-							// Connect to the database
-							require('includes/mysqli_connect.php');
-
-							// Store all possible errors
-							$errors = array();
-						}			
+						# Contact Form Handling...coming soon.
 					?>
 					<br />
 				</div>
