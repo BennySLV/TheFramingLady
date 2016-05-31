@@ -93,17 +93,19 @@ $(function() {
 	var $emailRegex = new RegExp(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/);
 
 	// Email Address input field
-	$('#email').on('blur', function() {		
+	$('#email').on('blur', function() {	
 		// Email address input value
 		var $emailInput = $(this).val();
 
-		/* If the email input text-box is NOT empty AND if the email is valid 
+		/* If the email input text-box is NOT empty 
+			- AND if the email is valid
 			(i.e. contains the necessary characters ('@', '.com,.org,etc')) then insert the "green tick" indicator
-		*/			
+		*/		
+
 		if($.trim($emailInput).length) {
 			if($emailRegex.test($emailInput)) {
 				$('#email-flag').removeClass('fa fa-times').addClass('fa fa-check');
-				$('#email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!')				
+				$('#email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!');								
 			}
 			else { // If the email address DOES NOT contain necessary regex characters
 				$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
@@ -114,21 +116,29 @@ $(function() {
 		else {
 			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
 			$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');				
-		}
+		}		
 	});
 
 	// Confirmed email address text input
 	$('#confirm-email').on('blur', function() {
-		// Email address input value
+
+		// Confirmed email-address input value
 		var $confirmEmailInput = $(this).val();
 
-		/* If the confirmed email input text-box is NOT empty AND if the email is valid 
+		// First email-address input value
+		var $emailInput = $('#email').val();
+
+		/* If the confirmed email input text-box is NOT empty 
+				- AND if the email is valid
+				- AND the confirmed email-address matches the first email-address entered
 			(i.e. contains the necessary characters ('@', '.com,.org,etc')) then insert the "green tick" indicator
 		*/			
 		if($.trim($confirmEmailInput).length) {
 			if($emailRegex.test($confirmEmailInput)) {
-				$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
-				$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!')				
+				if($confirmEmailInput === $emailInput) {
+					$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+					$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!');
+				}											
 			}
 			else { // If the confirmed email address DOES NOT contain necessary regex characters
 				$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
