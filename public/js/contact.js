@@ -100,7 +100,6 @@ $(function() {
 
 		/* If the email input text-box is NOT empty 
 			- AND if the email is valid
-			- AND if the two email-addresses entered match
 			(i.e. contains the necessary characters ('@', '.com,.org,etc')) then insert the "green tick" indicator
 		*/		
 		if($.trim($emailInput).length) {
