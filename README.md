@@ -16,7 +16,7 @@ For example, if you are using a LAMP Stack on the Ubuntu OS, using the terminal,
 <li>Access the following file:</li>
   - <code>/etc/apache2/sites-enabled/000-default.conf</code><br />
 
-<li>Inside your <code>000-default.conf file</code>, add the following code:</li><br />
+<li>Inside your <code>000-default.conf</code> file, add the following code:</li><br />
 
 <code>&lt;VirtualHost *:80&gt;</code><br />
         <code>ServerName theframinglady.dev</code><br />
