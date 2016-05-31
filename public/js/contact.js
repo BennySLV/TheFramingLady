@@ -125,9 +125,6 @@ $(function() {
 		// Confirmed email-address input value
 		var $confirmEmailInput = $(this).val();
 
-		// First email-address input value
-		var $emailInput = $('#email').val();
-
 		/* If the confirmed email input text-box is NOT empty 
 				- AND if the email is valid
 				- AND the confirmed email-address matches the first email-address entered
@@ -135,10 +132,8 @@ $(function() {
 		*/			
 		if($.trim($confirmEmailInput).length) {
 			if($emailRegex.test($confirmEmailInput)) {
-				if($confirmEmailInput === $emailInput) {
-					$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
-					$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!');
-				}											
+				$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+				$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!');											
 			}
 			else { // If the confirmed email address DOES NOT contain necessary regex characters
 				$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
