@@ -72,16 +72,16 @@
 					<button id="contact-form-button">Open contact form</button>
 					<form action="contact.php" method="post" id="contact-form" autocomplete="off">
 						<fieldset> 
-						<legend>Please fill in all fields:</legend>
+						<legend id="form-instructions">Please fill in all fields:</legend>
 						<div class="row">
 							<div class="col-sm-6">	
-								<p><input id="first-name" type="text" name="firstName" placeholder="First Name" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span><p>
-								<p><input id="surname" type="text" name="surname" placeholder="Surname" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
-								<p><input id="email" type="email" name="email" placeholder="Email Address" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
-								<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>	
+								<p><input id="first-name" type="text" name="firstName" placeholder="First Name" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName'];} ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span><p>
+								<p><input id="surname" type="text" name="surname" placeholder="Surname" value="<?php if(isset($_POST['surname'])) echo $_POST['surname']; ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
+								<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email'];} ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
+								<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" value="<?php if(isset($_POST['confirmEmail'])) echo $_POST['confirmEmail']; ?>"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>	
 							</div>
 							<div class="col-sm-6">
-								<p><textarea cols="27" rows="8" id="message" name="message" placeholder="Message..."></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>		
+								<p><textarea cols="28" rows="7" id="message" name="message" placeholder="Message..." value="<?php if(isset($_POST['message'])) { echo $_POST['message']; } ?>"></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>		
 							</div>
 						</div>
 						<div class="row">
@@ -91,11 +91,60 @@
 							</div>
 						</div>							
 						</fieldset>						
-					</form>		
+					</form>
+					<br />		
 					<?php 
-						# Contact Form Handling...coming soon.
+						// Check for form submission:
+						if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+							/* Form field Regular Expression Variables */
+							$firstNameRegex = '/^[a-zA-Z -]{3,16}$/';
+							$surnameRegex = '/^[a-zA-Z -]{3,16}$/';
+							$emailRegex = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/';
+							$messageRegex = '/[a-zA-Z0-9 ]+\w\W$/';
+
+							/* If the form is filled with ALL details 
+								- AND all fields contain suitable characters
+								- AND the two email addressed entered match
+							*/
+							if(!empty($_POST['firstName']) && !empty($_POST['surname']) && !empty($_POST['email']) && !empty($_POST['confirmEmail']) && !empty($_POST['message'])) {
+								if(preg_match($firstNameRegex, $_POST['firstName']) && preg_match($surnameRegex, $_POST['surname']) && preg_match($emailRegex, $_POST['email']) && preg_match($emailRegex, $_POST['confirmEmail']) && preg_match($messageRegex, $_POST['message'])) {
+									if($_POST['email'] === $_POST['confirmEmail']) {
+
+										// Store all data
+										$firstName = $_POST['firstName'];
+										$surname = $_POST['surname'];
+										$email = $_POST['email'];
+										$confirmEmail = $_POST['confirmEmail'];
+										$message = $_POST['message'];
+
+										// Confirmation message
+										echo '<p class="success">Thank You! Your message was sent successfully!.</p>';
+										echo "<p>A confirmation email has been sent to <b>$confirmEmail</b>.</p>";
+
+										// Email construction
+										$to = $confirmEmail; // Send to the confirmed email address entered by the user in the contact form
+										$subject = "The Framing Lady - Contact Form Submission Confirmation";
+										$emailMessage = "Hey $firstName,\n\nThank You for submitting your message!\n\nI will get back to you as soon as possible.\n\nKind regards, \n\nAnne-Marie Bartlett (The Framing Lady)";
+										$headers = "From: am@theframinglady.com\r\n";
+										$headers .= "Return-Path: am@theframinglady.com";
+
+										// Send email
+										mail($to, $subject, $emailMessage, $headers);
+									}
+									else { // If the two email addresses entered do not match
+										echo '<p class="error">Sorry, we could not process your request at this time. Please check that the two email-addresses entered match.</p>';
+									}									
+								}
+								else { // If any field is invalid (i.e. contains any illegal characters)
+									echo '<p class="error">Sorry, we could not process your request at this time. Please check that all fields contain valid data before submitting.</p>';
+								}																 
+							}
+							else { // If any fields are not filled 
+								echo '<p class="error">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p>';
+							}
+						} // End of form submission
 					?>
-					<br />
 				</div>
 				<div class="row">
 					<div class="col-sm-12">

@@ -89,7 +89,7 @@
 				<div class="col-sm-12">
 					<form action="testimonials.php" method="post" id="testimonials-form" autocomplete="off">
 						<fieldset>
-							<legend>Please fill in all fields:</legend>
+							<legend id="form-instructions">Please fill in all fields:</legend>
 							<div class="row">
 								<div class="col-sm-4">						
 									<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
