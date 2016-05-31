@@ -2,8 +2,6 @@
 
 // Shorthand for $(document).ready(function({ });
 $(function() {	
-	/* Contact Form Button - basic functionality */
-
 	// Initially hide the contact form when the page loads
 	$('#contact-form').hide();
 
@@ -17,15 +15,6 @@ $(function() {
 		// Display the close button at the bottom of the form
 		$('#form-close-button').addClass('fa fa-times').text(' Close');
 	});
-
-	// Hide the form when the user clicks the "close" button
-	$('#form-close-button').on('click', function(event) {
-		event.preventDefault(); // Prevent the entire from reloading
-
-		// Hide the form
-		$('#contact-form').fadeOut('slow');
-	});
-
 	/* For all contact form text-inputs 
 		Apply flags to indicate whether the specific input has been filled
 
@@ -185,7 +174,7 @@ $(function() {
 	});
 
 	// Submit button functionality
-	$('#submit-button').on('submit', function(event) {
+	$('#send-button').on('submit', function(event) {
 		// Prevent page from re-opening
 		event.preventDefault();
 
@@ -196,5 +185,52 @@ $(function() {
 		if($submitButtonClicked) {
 			$('#contact-form').fadeOut('slow');
 		}
-	}); 
+	});
+
+	// Clear all input fields when the user clicks the "reset" button
+	$('#reset-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire from reloading
+
+		// Flag to indicate that the "submit" was clicked
+		var $resetButtonClicked = $(this).data('clicked', true);
+
+		// If the button was clicked, clear all input fields
+		if($resetButtonClicked) {
+			$('#first-name').val("");
+			$('#surname').val("");
+			$('#email').val("");
+			$('#confirm-email').val("");
+			$('#message').val("");
+		}
+
+		// Flag all empty input fields appropriately
+		if($('#first-name').val("")) {
+			$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#first-name-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter first name!');
+		}
+		if($('#surname').val("")) {
+			$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter surname!');
+		}
+		if($('#email').val("")) {
+			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
+		}
+		if($('#confirm-email').val("")) {
+			$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#confirm-email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
+		}
+		if($('#message').val("")) {
+			$('#message-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#message-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter message!');
+		}			
+	});
+
+	// Hide the form when the user clicks the "close" button
+	$('#form-close-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire from reloading
+
+		// Hide the form
+		$('#contact-form').fadeOut('slow');
+	});
 });

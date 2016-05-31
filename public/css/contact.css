@@ -86,13 +86,47 @@ textarea {
 }
 
 .success {
-	color: rgba(95, 216, 14, 0.6);
-	font-weight: bold;
+	background-color: rgba(95, 216, 14, 0.6);
+	width: 490px;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px;
 }
 
 .error {
-	color: rgba(226, 19, 19, 0.6);
+	background-color: rgba(226, 19, 19, 0.6);
+	width: 490px;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.success-text {
 	font-weight: bold;
+}
+
+.error-text {
+	font-weight: bold;
+}
+
+#reset-button {
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+#reset-button:active {
+	background-color: rgba(95, 216, 14, 0.6);
+}
+
+#send-button {
+	border-radius: 15px;
+	font-size: 16px;
+	background-color: rgba(226, 19, 19, 0.6);	
+	margin-top: 10px;
+}
+
+#send-button:active {
+	background-color: rgba(95, 216, 14, 0.6);
 }
 
 #form-close-button {
@@ -105,17 +139,6 @@ textarea {
 
 #form-close-button:active {
 	background-color: rgba(226, 19, 19, 0.6);
-}
-
-#submit-button {
-	border-radius: 15px;
-	font-size: 18px;
-	background-color: rgba(226, 19, 19, 0.6);	
-	margin-top: 10px;
-}
-
-#submit-button:active {
-	background-color: rgba(95, 216, 14, 0.6);
 }
 
 #address {
