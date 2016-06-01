@@ -1,4 +1,8 @@
-/* JavaScript/jQuery for the Contact page */
+/** 
+* JavaScript/jQuery for the Contact page
+*
+* @author Benjamin Silveston <bsilveston37@gmail.com> 
+*/
 
 // Shorthand for $(document).ready(function({ });
 $(function() {	
@@ -173,6 +177,27 @@ $(function() {
 		}
 	});
 
+	// If Google Chrome Autofill tool is enabled - mark all completed fields appropriately
+	/*var $autoFill = $('#contact-form').attr('autocomplete', 'on');
+
+	if($autoFill) {
+		// First-name validation
+		$('#first-name-flag').removeClass('fa fa-times').addClass('fa fa-check');
+		$('#first-name-validation').removeClass('validation-fail').addClass('validation-pass').text(' First name is valid!');
+		
+		// Surname validation
+		$('#surname-flag').removeClass('fa fa-times').addClass('fa fa-check');
+		$('#surname-validation').removeClass('validation-fail').addClass('validation-pass').text(' Surname is valid!');
+		
+		// Email-address validation
+		$('#email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+		$('#email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email-address is valid!');
+		
+		// Confirmed email-address validation
+		$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
+		$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email-address is valid and matches!');
+	}*/
+	
 	// Submit button functionality
 	$('#send-button').on('submit', function(event) {
 		// Prevent page from re-opening
@@ -194,7 +219,8 @@ $(function() {
 		// Flag to indicate that the "submit" was clicked
 		var $resetButtonClicked = $(this).data('clicked', true);
 
-		// If the button was clicked, clear all input fields
+		/* If the button was clicked AND if ALL input fields are filled 
+			when the page first loads then clear all input fields */
 		if($resetButtonClicked) {
 			$('#first-name').val("");
 			$('#surname').val("");
