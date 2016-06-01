@@ -1,6 +1,7 @@
-/* JavaScript/jQuery for the portfolio page 
-
-	- Functionality for the image-panels 
+/** JavaScript/jQuery for the portfolio page
+* Functionality for the image-panels 
+*
+* @author Benjamin Silveston <bsilveston37@gmail.com> 
 */
 
 // Shorthand for $(document).ready(function(){ });

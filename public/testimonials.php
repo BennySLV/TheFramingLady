@@ -103,6 +103,11 @@
 							</div><!-- End of first row -->
 							<div class="row">
 								<div class="col-sm-12">
+									<button id="reset-button">Reset</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
 									<input type="submit" name="submit" value="Submit" id="submit-button" />
 									<button id="form-close-button"><i aria-hidden="true"></i></button>
 								</div>

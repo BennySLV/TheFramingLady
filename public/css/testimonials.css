@@ -98,6 +98,15 @@ textarea {
 	max-height: auto; 
 }
 
+#reset-button {
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+#reset-button:active {
+	background-color: rgba(95, 216, 14, 0.6);
+}
+
 #submit-button {
 	border-radius: 15px;
 	font-size: 18px;

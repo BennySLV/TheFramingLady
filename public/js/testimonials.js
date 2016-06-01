@@ -1,4 +1,8 @@
-/* JavaScript/jQuery for the testimonials page */
+/** JavaScript/jQuery for the testimonials page 
+*
+* @author Benjamin Silveston <bsilveston37@gmail.com> 
+*
+*/
 
 // Shorthand for $(document).ready(function({ });
 $(function() {
@@ -145,7 +149,9 @@ $(function() {
 	});
 
 	// When the user clicks the button, show the form
-	$('#submit-testimonial-button').on('click', function() {
+	$('#submit-testimonial-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire page from reloading
+
 		// Flag to indicate that the "Submit own testimonial" button was clicked
 		var $isClicked = $(this).data('clicked', true);
 
@@ -154,6 +160,45 @@ $(function() {
 			$('#testimonials-form').fadeIn('slow');
 			$('#form-close-button').addClass('fa fa-times').show().text(' Close');
 		}
+	});
+
+	// Clear all input fields when the user clicks the "reset" button
+	$('#reset-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire page from reloading
+
+		// Flag to indicate that the "submit" was clicked
+		var $resetButtonClicked = $(this).data('clicked', true);
+
+		// If the button was clicked, clear all input fields
+		if($resetButtonClicked) {
+			$('#first-name').val("");
+			$('#surname').val("");
+			$('#email').val("");
+			$('#confirm-email').val("");
+			$('#message').val("");
+		}
+
+		// Flag all empty input fields appropriately
+		if($('#first-name').val("")) {
+			$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#first-name-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter first name!');
+		}
+		if($('#surname').val("")) {
+			$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter surname!');
+		}
+		if($('#email').val("")) {
+			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
+		}
+		if($('#confirm-email').val("")) {
+			$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#confirm-email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
+		}
+		if($('#comments').val("")) {
+			$('#comments-flag').removeClass('fa fa-check').addClass('fa fa-times');
+			$('#comments-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter message!');
+		}			
 	});
 
 	// When the user clicks the "submit" button, close the form
@@ -173,7 +218,7 @@ $(function() {
 
 	// When the user clicks the "close" button apply the same above functionality
 	$('#form-close-button').on('click', function(event) {
-		// Prevent the page from reloading
+		// Prevent the entire page from reloading
 		event.preventDefault(); 
 
 		// Flag to indicate that the "close" button was clicked
@@ -182,7 +227,6 @@ $(function() {
 		// If the "close" button was clicked
 		if($closeButtonClicked) {
 			$('#testimonials-form').fadeOut('slow');
-			$('#form-close-button').removeClass('fa fa-times').hide().text(''); // hide the "close" button
 		}
 	});
 });
