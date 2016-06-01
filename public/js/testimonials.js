@@ -175,7 +175,7 @@ $(function() {
 			$('#surname').val("");
 			$('#email').val("");
 			$('#confirm-email').val("");
-			$('#message').val("");
+			$('#comments').val("");
 		}
 
 		// Flag all empty input fields appropriately
