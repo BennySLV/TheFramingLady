@@ -70,7 +70,7 @@
 				</div>
 				<div class="col-sm-6">
 					<button id="contact-form-button">Open contact form</button>
-					<form action="contact.php" method="post" id="contact-form" autocomplete="off">
+					<form id="contact-form" action="contact.php" method="post" autocomplete="off">
 						<fieldset> 
 						<legend id="form-instructions">Please fill in all fields:</legend>
 						<div class="row">
