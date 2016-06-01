@@ -178,24 +178,26 @@ $(function() {
 	});
 	
 	// Submit button functionality
-	$('#send-button').on('submit', function(event) {
-		// Prevent page from re-opening
-		event.preventDefault();
+	$('#contact-form').on('submit', function() {
+		//return false;
+		$('#send-button').on('click', function(event) {
+			event.preventDefault(); // Prevent the entire page from refreshing each time the form submits
 
-		// Flag to indicate that the "submit" was clicked
-		var $submitButtonClicked = $(this).data('clicked', true);
+			// Flag to indicate that the "submit" was clicked
+			var $submitButtonClicked = $(this).data('clicked', true);
 
-		// If the "submit" button was clicked
-		if($submitButtonClicked) {
-			$('#contact-form').fadeOut('slow');
-		}
+			// If the "submit" button was clicked
+			if($submitButtonClicked) {
+				$('#contact-form').fadeOut('slow');
+			}
+		});		
 	});
 
 	// Clear all input fields when the user clicks the "reset" button
 	$('#reset-button').on('click', function(event) {
-		event.preventDefault(); // Prevent the entire from reloading
+		event.preventDefault(); // Prevent the entire page from reloading
 
-		// Flag to indicate that the "submit" was clicked
+		// Flag to indicate that the "reset" was clicked
 		var $resetButtonClicked = $(this).data('clicked', true);
 
 		/* If the button was clicked AND if ALL input fields are filled 

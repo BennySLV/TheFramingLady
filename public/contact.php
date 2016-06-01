@@ -124,9 +124,7 @@
 										$message = $_POST['message'];
 
 										// Confirmation message
-										echo '<div class="success"><p class="success-text">Thank You! Your message was sent successfully!</p>'; 
-
-										echo "<p>A confirmation email has been sent to <b>$confirmEmail</b>.</p></div>";
+										echo '<div class="success"><p>Thank You! Your message was sent successfully! A confirmation email has been sent to <b>'. $confirmEmail . '</b>.</p></div>';
 
 										// Email construction
 										$to = $confirmEmail; // Send to the confirmed email address entered by the user in the contact form
@@ -139,18 +137,15 @@
 										mail($to, $subject, $emailMessage, $headers);
 									}
 									else { // If the two email addresses entered do not match
-										echo '<div class="error">
-											<p class="error-text">Sorry, we could not process your request at this time. Please check that the two email-addresses entered match.</p></div>';
+										echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check that the two email-addresses entered match.</p></div>';
 									}									
 								}
 								else { // If any field is invalid (i.e. contains any illegal characters)
-									echo '<div class="error">
-										<p class="error-text">Sorry, we could not process your request at this time. Please check that all fields contain valid data before submitting.</p></div>';
+									echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check that all fields contain valid data before submitting.</p></div>';
 								}																 
 							}
 							else { // If any fields are not filled 
-								echo '<div class="error">
-									<p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
+								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
 							}
 						} // End of form submission
 					?>

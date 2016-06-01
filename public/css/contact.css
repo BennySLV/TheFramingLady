@@ -87,7 +87,7 @@ textarea {
 
 .success {
 	background-color: rgba(95, 216, 14, 0.6);
-	width: 490px;
+	width: 495px;
 	height: 50px;
 	border-radius: 10px;
 	padding: 5px;
@@ -95,7 +95,7 @@ textarea {
 
 .error {
 	background-color: rgba(226, 19, 19, 0.6);
-	width: 490px;
+	width: 495px;
 	height: 50px;
 	border-radius: 10px;
 	padding: 5px;
