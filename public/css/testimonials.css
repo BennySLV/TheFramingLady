@@ -98,6 +98,34 @@ textarea {
 	max-height: auto; 
 }
 
+.success {
+	background-color: rgba(95, 216, 14, 0.6);
+	width: 495px;
+	height: auto;
+	max-width: 100%;
+	max-height: auto;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.error {
+	background-color: rgba(226, 19, 19, 0.6);
+	width: 495px;
+	height: auto;
+	max-width: 100%;
+	max-height: auto;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.success-text {
+	font-weight: bold;
+}
+
+.error-text {
+	font-weight: bold;
+}
+
 #reset-button {
 	border-radius: 15px;
 	font-size: 16px;

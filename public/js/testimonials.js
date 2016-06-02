@@ -9,6 +9,20 @@ $(function() {
 	// Initially hide the testimonials form when the page first loads
 	$('#testimonials-form').hide();
 
+	// When the user clicks the button, show the form
+	$('#submit-testimonial-button').on('click', function(event) {
+		event.preventDefault(); // Prevent the entire page from reloading
+
+		// Flag to indicate that the "Submit own testimonial" button was clicked
+		var $isClicked = $(this).data('clicked', true);
+
+		// If "Submit own testimonial" button was clicked, show the form and its accompanying "close" button
+		if($($isClicked)) {
+			$('#testimonials-form').fadeIn('slow');
+			$('#form-close-button').addClass('fa fa-times').show().text(' Close');
+		}
+	});
+
 	// First Name Regular Expression
 	var $firstNameRegex = new RegExp(/^[a-zA-Z -]{3,16}$/);
 
@@ -146,21 +160,7 @@ $(function() {
 			$('#comments-flag').removeClass('fa fa-check').addClass('fa fa-times');
 			$('#comments-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter your comment(s)!');
 		}
-	});
-
-	// When the user clicks the button, show the form
-	$('#submit-testimonial-button').on('click', function(event) {
-		event.preventDefault(); // Prevent the entire page from reloading
-
-		// Flag to indicate that the "Submit own testimonial" button was clicked
-		var $isClicked = $(this).data('clicked', true);
-
-		// If "Submit own testimonial" button was clicked, show the form and its accompanying "close" button
-		if($($isClicked)) {
-			$('#testimonials-form').fadeIn('slow');
-			$('#form-close-button').addClass('fa fa-times').show().text(' Close');
-		}
-	});
+	});	
 
 	// Clear all input fields when the user clicks the "reset" button
 	$('#reset-button').on('click', function(event) {
@@ -202,18 +202,18 @@ $(function() {
 	});
 
 	// When the user clicks the "submit" button, close the form
-	$('#submit-button').on('click', function(event) {
-		// Prevent the page from reloading
-		event.preventDefault(); 
+	$('#contact-form').on('submit', function() {
+		$('#submit-button').on('click', function(event) {
+			event.preventDefault(); // Prevent the entire page from refreshing each time the form submits
 
-		// Flag to indicate that the "submit" button was clicked
-		var $submitButtonClicked = $(this).data('clicked', true);
+			// Flag to indicate that the "submit" was clicked
+			var $submitButtonClicked = $(this).data('clicked', true);
 
-		// If the "submit" button was clicked
-		if($submitButtonClicked) {
-			$('#testimonials-form').fadeOut('slow');
-			$('#form-close-button').removeClass('fa fa-times').hide().text(''); // hide the "close" button
-		}
+			// If the "submit" button was clicked
+			if($submitButtonClicked) {
+				$('#contact-form').fadeOut('slow');
+			}
+		});
 	});
 
 	// When the user clicks the "close" button apply the same above functionality

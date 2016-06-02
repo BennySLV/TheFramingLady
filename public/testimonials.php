@@ -59,29 +59,47 @@
 				<div class="col-sm-12">
 					<h1>Testimonials</h1>
 					<p id="intro-text">Here's what some people have been saying about me. Thank you so much for the feedback!</p>
-					<table id="testimonials-table">
-					<!-- Dummy data - to be dynamically created in the future -->
-						<tr>
-							<th>Firstname</th>
-							<th>Surname</th>
-							<th>Comments</th>
-						</tr>
-						<tr>
-							<td>Mark</td>
-							<td>Bartlett</td>
-							<td>Excellent service and a real eye for detail. Obvious that she really loves her job and her clients. Price was very reasonable too.</td>
-						</tr>
-						<tr>
-							<td>Nat</td>
-							<td>Cowan</td>
-							<td>A fantastic service! Very much love my framed photo. Anne-Marie is a fantastic individual. I owe her a pint!</td>
-						</tr>
-						<tr>
-							<td>Ben</td>
-							<td>Silveston</td>
-							<td>A great service! Anne-Marie understood my requirements straight away and delivered the work to a very high standard. Exactly what I was looking for. I can't recommend her highly enough.</td>
-						</tr>
-					</table><br />
+					<?php
+						/* Table of Existing Testimonials */
+
+						// Connect to the database
+						require('includes/mysqli_connect.php');
+
+						// Make the query - selects all existing testimonials from the database
+						$query = "SELECT first_name, surname, comments FROM testimonials";
+
+						// Run the query 
+						$result = @mysqli_query($dbc, $query);
+
+						// If the query ran OK
+						if($result) {
+							// Table header
+							echo '<table id="testimonials-table">
+								<tr>
+									<th>Firstname</th>
+									<th>Surname</th>
+									<th>Comments</th>
+								</tr>';
+
+							// Fetch and print the records 
+							while($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+								echo '<tr>
+										<td>' . $row['first_name'] . '</td>
+										<td>' . $row['surname'] . '</td>
+										<td>' . $row['comments'] . '</td>
+									</tr>';
+							}						
+						}
+
+						// Close the table
+						echo '</table><br />';
+
+						// Free up the resources
+						mysqli_free_result($result);
+
+						// Close the database
+						@mysqli_close($dbc);
+					?>
 					<button id="submit-testimonial-button">Submit your own testimonial here</button>
 				</div>
 			</div><br />
@@ -111,11 +129,84 @@
 									<input type="submit" name="submit" value="Submit" id="submit-button" />
 									<button id="form-close-button"><i aria-hidden="true"></i></button>
 								</div>
-							</div><!-- End of second row -->																
+							</div><!-- End of second row -->				
 						</fieldset>						
 					</form>					
 					<?php 
-						// PHP code for form handling - to be inserted soon					
+						// PHP code for form handling
+
+						// Check for form submission:
+						if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+							// Connect to the database
+							require('includes/mysqli_connect.php');
+
+							/* Form field Regular Expression Variables */
+							$firstNameRegex = '/^[a-zA-Z -]{3,16}$/';
+							$surnameRegex = '/^[a-zA-Z -]{3,16}$/';
+							$emailRegex = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/';
+							$commentsRegex = '/[a-zA-Z0-9 ]+\w\W$/';
+
+							/* If the form is filled with ALL details 
+								- AND all fields contain suitable characters
+								- AND the two email addressed entered match
+							*/
+							if(!empty($_POST['firstName']) && !empty($_POST['surname']) && !empty($_POST['email']) && !empty($_POST['confirmEmail']) && !empty($_POST['comments'])) {
+								if(preg_match($firstNameRegex, $_POST['firstName']) && preg_match($surnameRegex, $_POST['surname']) && preg_match($emailRegex, $_POST['email']) && preg_match($emailRegex, $_POST['confirmEmail']) && preg_match($commentsRegex, $_POST['comments'])) {
+									if($_POST['email'] === $_POST['confirmEmail']) {
+
+										// Store all data
+										$firstName = $_POST['firstName'];
+										$surname = $_POST['surname'];
+										$email = $_POST['email'];
+										$confirmEmail = $_POST['confirmEmail'];
+										$comments = $_POST['comments'];
+
+										// Query to insert new testimonial into the database
+										$query = "INSERT INTO testimonials(first_name, surname, email, comments, submission_date) VALUES('$firstName', '$surname', '$confirmEmail', '$comments', NOW())";
+
+										// Run the query
+										$result = @mysqli_query($dbc, $query);								
+
+										// If the query ran OK
+										if($result) {
+
+											// Confirmation message
+											echo '<div class="success"><p>Thank You! Your testimonial was submitted successfully! A confirmation email has been sent to <b>'. $confirmEmail . '</b>.</p></div>';
+
+											// Email construction
+											$to = $confirmEmail; // Send to the confirmed email address entered by the user in the contact form
+											$subject = "The Framing Lady - Testimonial Submission Confirmation";
+											$emailMessage = "Hey $firstName,\n\nThank You for submitting your testimonial!\n\nI really appreciate the feedback!\n\nKind regards, \n\nAnne-Marie Bartlett (The Framing Lady)";
+											$headers = "From: am@theframinglady.com\r\n";
+											$headers .= "Return-Path: am@theframinglady.com";
+
+											// Send email
+											mail($to, $subject, $emailMessage, $headers);
+										}
+										else { // If the query did NOT run OK
+											echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please try again later. If you encounter any further issues then please don\'t hesitate to <a href="contact.php">contact</a> me.</p></div>';
+											// Debugging message
+											echo'<p>' . mysqli_error($dbc) . '<br /><br />Query: ' . $query . '</p>';
+										}								
+									}
+									else { // If the two email addresses entered do not match
+										echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check that the two email-addresses entered match.</p></div>';
+									}									
+								}
+								else { // If any field is invalid (i.e. contains any illegal characters)
+									echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check that all fields contain valid data before submitting.</p></div>';
+								}																 
+							}
+							else { // If any fields are not filled 
+								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
+							}
+							// Free up the resources
+							@mysqli_free_result($result);
+
+							// Close the database
+							@mysql_close($dbc);
+						} // End of form submission				
 					?>
 				</div>
 			</div>
