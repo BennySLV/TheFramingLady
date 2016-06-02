@@ -150,7 +150,7 @@ $(function() {
 	});
 
 	// Contact message Regular Expression
-	var $messageRegex = new RegExp(/[a-zA-Z0-9 ]+\w\W$/);
+	var $messageRegex = new RegExp(/^[a-zA-Z0-9?$@#()'!,+\-=_:.&€£*%\s]+$/);
 
 	// Contact message text-area
 	$('#message').on('blur', function() {
