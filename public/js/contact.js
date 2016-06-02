@@ -179,7 +179,6 @@ $(function() {
 	
 	// Submit button functionality
 	$('#contact-form').on('submit', function() {
-		//return false;
 		$('#send-button').on('click', function(event) {
 			event.preventDefault(); // Prevent the entire page from refreshing each time the form submits
 
