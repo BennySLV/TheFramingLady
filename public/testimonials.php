@@ -170,7 +170,6 @@
 
 										// If the query ran OK
 										if($result) {
-
 											// Confirmation message
 											echo '<div class="success"><p>Thank You! Your testimonial was submitted successfully! A confirmation email has been sent to <b>'. $confirmEmail . '</b>.</p></div>';
 
