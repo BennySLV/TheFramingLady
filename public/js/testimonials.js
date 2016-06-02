@@ -120,7 +120,7 @@ $(function() {
 		if($.trim($confirmEmailInput).length) {
 			if($emailRegex.test($confirmEmailInput)) {
 				$('#confirm-email-flag').removeClass('fa fa-times').addClass('fa fa-check');
-				$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid!')				
+				$('#confirm-email-validation').removeClass('validation-fail').addClass('validation-pass').text(' Email address is valid and matches!');				
 			}
 			else { // If the confirmed email address DOES NOT contain necessary regex characters
 				$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
@@ -135,18 +135,18 @@ $(function() {
 	});
 
 	// Contact message Regular Expression
-	var $messageRegex = new RegExp(/[a-zA-Z0-9 ]+\w\W$/);
+	var $commentsRegex = new RegExp(/^[a-zA-Z0-9?$@#()\'!,+\-=_:.&€£*%\s]+$/);
 
 	// Contact message text-area
 	$('#comments').on('blur', function() {
 		// Message text input
-		var $messageInput = $(this).val();
+		var $commentsInput = $(this).val();
 
 		/* If the message input text-box is NOT empty AND if the email is valid 
 			(i.e. contains the necessary characters) then insert the "green tick" indicator and message
 		*/
-		if($.trim($messageInput).length) {
-			if($messageRegex.test($messageInput)) {
+		if($.trim($commentsInput).length) {
+			if($commentsRegex.test($commentsInput)) {
 				$('#comments-flag').removeClass('fa fa-times').addClass('fa fa-check');
 				$('#comments-validation').removeClass('validation-fail').addClass('validation-pass').text(' Comment(s) is valid!');
 			}

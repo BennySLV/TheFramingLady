@@ -145,7 +145,7 @@
 							$firstNameRegex = '/^[a-zA-Z -]{3,16}$/';
 							$surnameRegex = '/^[a-zA-Z -]{3,16}$/';
 							$emailRegex = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/';
-							$commentsRegex = '/[a-zA-Z0-9 ]+\w\W$/';
+							$commentsRegex = '/^[a-zA-Z0-9?$@#()\'!,+\-=_:.&€£*%\s]+$/';
 
 							/* If the form is filled with ALL details 
 								- AND all fields contain suitable characters
