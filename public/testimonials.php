@@ -66,7 +66,7 @@
 						require('includes/mysqli_connect.php');
 
 						// Make the query - selects all existing testimonials from the database
-						$query = "SELECT first_name, surname, comments FROM testimonials";
+						$query = "SELECT first_name, surname, comments FROM testimonials ORDER BY submission_date DESC";
 
 						// Run the query 
 						$result = @mysqli_query($dbc, $query);
@@ -105,15 +105,15 @@
 			</div><br />
 			<div class="row">
 				<div class="col-sm-12">
-					<form action="testimonials.php" method="post" id="testimonials-form" autocomplete="off">
+					<form id="testimonials-form" action="testimonials.php" method="post" autocomplete="off">
 						<fieldset>
 							<legend id="form-instructions">Please fill in all fields:</legend>
 							<div class="row">
 								<div class="col-sm-4">						
-									<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
-									<p><input id="surname" type="text" name="surname" placeholder="Surname" maxlength="20" value="<?php if(isset($_POST['surname'])) { echo $_POST['surname']; } ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
-									<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
-									<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40" value="<?php if(isset($_POST['confirmEmail'])) { echo $_POST['confirmEmail']; } ?>"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>									
+									<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
+									<p><input id="surname" type="text" name="surname" placeholder="Surname" maxlength="20" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
+									<p><input id="email" type="email" name="email" placeholder="Email Address" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
+									<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>									
 								</div>
 								<div class="col-sm-8">
 									<p><textarea cols="80" rows="8" id="comments" name="comments" placeholder="Comments..."></textarea> <span id="comments-flag"><i aria-hidden="true"></i></span> <span id="comments-validation"></span></p>
@@ -145,7 +145,7 @@
 							$firstNameRegex = '/^[a-zA-Z -]{3,16}$/';
 							$surnameRegex = '/^[a-zA-Z -]{3,16}$/';
 							$emailRegex = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/';
-							$commentsRegex = '/^[a-zA-Z0-9?$@#()\'!,+\-=_:.&€£*%\s]+$/';
+							$commentsRegex = "/^[a-zA-Z0-9?$@#()!,+\-=_:.'\"&€£*%\s]+$/";
 
 							/* If the form is filled with ALL details 
 								- AND all fields contain suitable characters
@@ -163,7 +163,7 @@
 										$comments = $_POST['comments'];
 
 										// Query to insert new testimonial into the database
-										$query = "INSERT INTO testimonials(first_name, surname, email, comments, submission_date) VALUES('$firstName', '$surname', '$confirmEmail', '$comments', NOW())";
+										$query = "INSERT INTO testimonials(first_name, surname, email, comments, submission_date) VALUES('$firstName', '$surname', '$confirmEmail', \"$comments\", NOW())";
 
 										// Run the query
 										$result = @mysqli_query($dbc, $query);								
@@ -171,7 +171,7 @@
 										// If the query ran OK
 										if($result) {
 											// Confirmation message
-											echo '<div class="success"><p>Thank You! Your testimonial was submitted successfully! A confirmation email has been sent to <b>'. $confirmEmail . '</b>.</p></div>';
+											echo '<div class="success"><p>Thank You! Your testimonial was submitted successfully! A confirmation email has been sent to <b>'. $confirmEmail . '</b>. To view your testimonial, click <a href="testimonials.php">here</a></p></div>';
 
 											// Email construction
 											$to = $confirmEmail; // Send to the confirmed email address entered by the user in the contact form
@@ -181,7 +181,7 @@
 											$headers .= "Return-Path: am@theframinglady.com";
 
 											// Send email
-											mail($to, $subject, $emailMessage, $headers);
+											mail($to, $subject, $emailMessage, $headers);											
 										}
 										else { // If the query did NOT run OK
 											echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please try again later. If you encounter any further issues then please don\'t hesitate to <a href="contact.php">contact</a> me.</p></div>';
@@ -195,9 +195,9 @@
 								}
 								else { // If any field is invalid (i.e. contains any illegal characters)
 									echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check that all fields contain valid data before submitting.</p></div>';
-								}																 
+								}																	
 							}
-							else { // If any fields are not filled 
+							else { // If any fields are empty 
 								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
 							}
 							// Free up the resources
