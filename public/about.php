@@ -65,7 +65,8 @@
 						<li>The picture</li>
 						<li>YOUR tastes and preferences</li>
 						<li>The environment in which it will be hanged</li>
-					</ol></p>					
+					</ol></p>
+					<p>Check out some of my work on my <a href="portfolio.php">portfolio</a> page.</p>		
 					<p>And if that's not enough, I have numerous honours and awards, including:
 					<ul>
 						<li>Most Loved Picture Framer 2012 and 2013</li>
@@ -79,7 +80,7 @@
 				<div class="col-sm-12">
 					<iframe id="youtube-video-intro" width="336" height="336" src="https://www.youtube.com/embed/E9DtOieHtd4" frameborder="0" allowfullscreen></iframe>
 					<p id="additional-info">In my spare time, I like travelling. With my favourite country being South Africa. I also like visiting art galleries as well as walking my dogs around the Holwell countryside.</p>
-					<p>If you want to know more, then please don't hesitate to <a href="contact.php">contact</a> me.</p>
+					<p>If you want to know more about what I can do for you then please don't hesitate to <a href="contact.php">contact</a> me.</p>
 					<p>Find out what others have been saying about me too - check out my <a href="testimonials.php">testimonials</a>!</p>
 				</div>
 			</div>
