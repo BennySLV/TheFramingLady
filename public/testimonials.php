@@ -110,9 +110,9 @@
 							<legend id="form-instructions">Please fill in all fields:</legend>
 							<div class="row">
 								<div class="col-sm-4">						
-									<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
-									<p><input id="surname" type="text" name="surname" placeholder="Surname" maxlength="20" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
-									<p><input id="email" type="email" name="email" placeholder="Email Address" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
+									<p><input id="first-name" type="text" name="firstName" placeholder="First Name" maxlength="15" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName']; ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
+									<p><input id="surname" type="text" name="surname" placeholder="Surname" maxlength="20" value="<?php if(isset($_POST['surname'])) echo $_POST['surname']; ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
+									<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
 									<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" maxlength="40"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>									
 								</div>
 								<div class="col-sm-8">
@@ -137,7 +137,6 @@
 
 						// Check for form submission:
 						if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
 							// Connect to the database
 							require('includes/mysqli_connect.php');
 
@@ -181,10 +180,11 @@
 											$headers .= "Return-Path: am@theframinglady.com";
 
 											// Send email
-											mail($to, $subject, $emailMessage, $headers);											
+											mail($to, $subject, $emailMessage, $headers);			
 										}
 										else { // If the query did NOT run OK
 											echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please try again later. If you encounter any further issues then please don\'t hesitate to <a href="contact.php">contact</a> me.</p></div>';
+
 											// Debugging message
 											echo'<p>' . mysqli_error($dbc) . '<br /><br />Query: ' . $query . '</p>';
 										}								
@@ -199,7 +199,7 @@
 							}
 							else { // If any fields are empty 
 								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
-							}
+							}							
 							// Free up the resources
 							@mysqli_free_result($result);
 
