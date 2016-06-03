@@ -23,11 +23,11 @@ For example if you are using the LAMP Stack on Ubuntu, please do the following u
         <code>DocumentRoot /var/www/TheFramingLady/public</code><br />
         <code>SetEnv APPLICATION_ENV "development"</code><br />
         <code>&lt;Directory /var/www/TheFramingLady/public&gt;</code><br />
-                  <code>Options FollowSymLinks</code><br />
-                  <code>DirectoryIndex index.php</code><br />
-                  <code>AllowOverride All</code><br />
-                  <code>Order allow,deny</code><br />
-                  <code>Allow from all</code><br />
+          <p style="textindent:50px"><code>Options FollowSymLinks</code></p><br />
+          <p style="textindent:50px"><code>DirectoryIndex index.php</code></p><br />
+          <p style="textindent:50px"><code>AllowOverride All</code></p><br />
+          <p style="textindent:50px"><code>Order allow,deny</code></p><br />
+          <p style="textindent:50px"><code>Allow from all</code></p><br />
         <code>&lt;/Directory&gt;</code><br />
 <code>&lt;/VirtualHost&gt;</code>
 
