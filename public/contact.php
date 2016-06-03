@@ -78,10 +78,10 @@
 								<p><input id="first-name" type="text" name="firstName" placeholder="First Name" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName'];} ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span><p>
 								<p><input id="surname" type="text" name="surname" placeholder="Surname" value="<?php if(isset($_POST['surname'])) echo $_POST['surname']; ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
 								<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email'];} ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
-								<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" value="<?php if(isset($_POST['confirmEmail'])) echo $_POST['confirmEmail']; ?>"> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>	
+								<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" /> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>	
 							</div>
 							<div class="col-sm-6">
-								<p><textarea cols="28" rows="7" id="message" name="message" placeholder="Message..." value="<?php if(isset($_POST['message'])) { echo $_POST['message']; } ?>"></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>		
+								<p><textarea cols="28" rows="7" id="message" name="message" placeholder="Message..."></textarea> <span id="message-flag"><i aria-hidden="true"></i></span> <span id="message-validation"></span></p>		
 							</div>
 						</div>
 						<div class="row">
