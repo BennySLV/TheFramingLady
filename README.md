@@ -13,10 +13,10 @@
 For example if you are using the LAMP Stack on Ubuntu, please do the following using the terminal:
 
 <ol>
-<li>Access the following file:</li>
+<li>Access the following file and edit using your preferred text editor (e.g. nano or vim):</li>
   - <code>/etc/apache2/sites-enabled/000-default.conf</code><br />
 
-<li>Inside your <code>000-default.conf</code> file, add the following code:</li><br />
+<li>Inside your <code>000-default.conf</code> file, add the following code at the bottom of the file:</li><br />
 
 <code>&lt;VirtualHost *:80&gt;</code><br />
         <code>ServerName theframinglady.dev</code><br />
