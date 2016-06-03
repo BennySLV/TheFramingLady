@@ -146,7 +146,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h3>Still not enough?!</h3>
-					<p>If you want to see more work from me, don't hesitate to <a href="contact.php">contact</a> me.
+					<p>If you want to see more work from me then please don't hesitate to <a href="contact.php">contact</a> me.
 				</div>
 			</div>			
 		</div> <!-- End of .jumbotron -->
