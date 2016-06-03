@@ -8,9 +8,9 @@
 
 <h2>Installation</h2>
 
-It is recommended to set up your own virtual host on your preferred web-server stack (LAMP is most preferred).
+<p>Please note that to view the "testimonials" page data and to successfully test the contact form on the "contact" page, you will need a web server. It is also recommended to set up your own virtual host on your preferred web-server stack.</p>
 
-For example, if you are using a LAMP Stack on the Ubuntu OS, using the terminal, please do the following:
+For example if you are using the LAMP Stack on Ubuntu, please do the following using the terminal:
 
 <ol>
 <li>Access the following file:</li>
@@ -35,4 +35,4 @@ For example, if you are using a LAMP Stack on the Ubuntu OS, using the terminal,
 
 <code>127.0.0.1       theframinglady.dev localhost</code>
 </ol>
-<p>Please note that these above details will be different if you choose to use your own personal web server as opposed to localhost.</p>
+<p>Please note that these above details will be different if you choose to use your own personal web server as opposed to localhost or if you plan to use another web-server stack such as MAMP, XAMPP, WAMP, etc.</p>
