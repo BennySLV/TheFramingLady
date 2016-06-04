@@ -38,4 +38,4 @@ For example if you are using the LAMP Stack on Ubuntu, please do the following u
 <p>Please note that these above details will be different if you choose to use your own personal web server as opposed to localhost or if you plan to use another web-server stack such as MAMP, XAMPP, WAMP, etc.</p>
 
 <h2>Additional Notes</h2>
-<p>It is recommended to view this website on the Google Chrome web browser to ensure that all custom fonts load.</p>
+<p>It is recommended to view this website on the Google Chrome/IE/Safari/Opera web browser to ensure that all custom fonts load. This is a known issue with Mozilla Firefox.</p>
