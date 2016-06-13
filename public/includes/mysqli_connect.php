@@ -15,8 +15,14 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'theframinglady');
 
 // Establish the database connection:
-$dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) 
-	OR die ('Could not connect to MySQL: ' . mysqli_connect_error());
+$dbc = new MySQLi(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-// Set the encoding:
-mysqli_set_charset($dbc, 'utf8');
+// Verify the connection:
+if($dbc->connect_error) {
+	echo $dbc->connect_error;
+	unset($dbc); 	
+}
+else {
+	// Set the encoding:
+	$dbc->set_charset('utf-8');
+}
