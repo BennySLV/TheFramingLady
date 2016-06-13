@@ -60,7 +60,7 @@
 					<h1>Testimonials</h1>
 					<p id="intro-text">Here's what some people have been saying about me. Thank you so much for the feedback!</p>
 					<?php
-						/* Table of Existing Testimonials */
+						/* Table of Submitted Testimonials */
 
 						// Connect to the database
 						require('includes/mysqli_connect.php');
@@ -69,7 +69,7 @@
 						$query = "SELECT first_name, surname, comments FROM testimonials ORDER BY submission_date DESC";
 
 						// Run the query 
-						$result = @mysqli_query($dbc, $query);
+						$result = $dbc->query($query);
 
 						// If the query ran OK
 						if($result) {
@@ -82,7 +82,7 @@
 								</tr>';
 
 							// Fetch and print the records 
-							while($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+							while($row = $result->fetch_array(MYSQLI_ASSOC)) {
 								echo '<tr>
 										<td>' . $row['first_name'] . '</td>
 										<td>' . $row['surname'] . '</td>
@@ -93,12 +93,6 @@
 
 						// Close the table
 						echo '</table><br />';
-
-						// Free up the resources
-						mysqli_free_result($result);
-
-						// Close the database
-						@mysqli_close($dbc);
 					?>
 					<button id="submit-testimonial-button">Submit your own testimonial here</button>
 				</div>
@@ -133,7 +127,7 @@
 						</fieldset>						
 					</form>					
 					<?php 
-						// PHP code for form handling
+						// PHP code for testimonial form handling
 
 						// Check for form submission:
 						if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -165,7 +159,7 @@
 										$query = "INSERT INTO testimonials(first_name, surname, email, comments, submission_date) VALUES('$firstName', '$surname', '$confirmEmail', \"$comments\", NOW())";
 
 										// Run the query
-										$result = @mysqli_query($dbc, $query);								
+										$result = $dbc->query($query);								
 
 										// If the query ran OK
 										if($result) {
@@ -184,9 +178,6 @@
 										}
 										else { // If the query did NOT run OK
 											echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please try again later. If you encounter any further issues then please don\'t hesitate to <a href="contact.php">contact</a> me.</p></div>';
-
-											// Debugging message
-											echo'<p>' . mysqli_error($dbc) . '<br /><br />Query: ' . $query . '</p>';
 										}								
 									}
 									else { // If the two email addresses entered do not match
@@ -201,10 +192,11 @@
 								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
 							}							
 							// Free up the resources
-							@mysqli_free_result($result);
+							$dbc->free_result($result);
 
 							// Close the database
-							@mysql_close($dbc);
+							$dbc->close($dbc);
+							unset($dbc);
 						} // End of form submission				
 					?>
 				</div>
