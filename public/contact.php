@@ -7,26 +7,23 @@
 	<!-- Latest compiled and minified CSS for Bootstrap -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
-	<!-- Font Awesome Library -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-	
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-	<!-- jQuery-UI library -->
-	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
-
-	<!-- Google Maps API -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-
 	<!-- Latest compiled JavaScript for Bootstrap -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/contact.css" />
+	<!-- Font Awesome Library -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
-	<!-- Custom JavaScript/jQuery -->
-	<script type="text/javascript" src="js/contact.js"></script>
+	<!-- Custom CSS/LESS -->
+	<link rel="stylesheet/less" type="text/css" href="css/about.less" />
+
+	<!-- LESS CDN -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
+
+	<!-- jQuery library CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- jQuery-UI library CDN -->
+	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
 
 	<!-- Site Icon -->
 	<link rel="icon" type="image/png" href="images/web-images/site-icon.png" />
@@ -53,6 +50,7 @@
 						<a id="portfolio-link" href="portfolio.php">Portfolio</a>
 						<a id="testimonial-link" href="testimonials.php">Testimonials</a>
 						<a id="contact-link" href="contact.php">Contact</a>
+						<a id="sign-in-link" href="sign_in.php">Sign In</a>
 					</nav>
 				</div>
 			</div>
@@ -72,10 +70,10 @@
 					<button id="contact-form-button">Open contact form</button>
 					<form id="contact-form" action="contact.php" method="post" autocomplete="off">
 						<fieldset> 
-						<legend id="form-instructions">Please fill in all fields:</legend>
+						<legend id="form-instructions">Please fill in <b>all</b> fields:</legend>
 						<div class="row">
 							<div class="col-sm-6">	
-								<p><input id="first-name" type="text" name="firstName" placeholder="First Name" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName'];} ?>" /></span> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span><p>
+								<p><input id="first-name" type="text" name="firstName" placeholder="First Name" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName'];} ?>" /> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span><p>
 								<p><input id="surname" type="text" name="surname" placeholder="Surname" value="<?php if(isset($_POST['surname'])) echo $_POST['surname']; ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
 								<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email'];} ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>
 								<p><input id="confirm-email" type="email" name="confirmEmail" placeholder="Confirm Email Address" /> <span id="confirm-email-flag"><i aria-hidden="true"></i></span> <span id="confirm-email-validation"></span></p>	

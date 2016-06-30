@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<!-- Ensure proper rendering and touch zooming on mobile devices -->
@@ -49,7 +49,8 @@
 						<a id="about-link" href="about.php">About</a>
 						<a id="portfolio-link" href="portfolio.php">Portfolio</a>
 						<a id="testimonials-link" href="testimonials.php">Testimonials</a>
-						<a id="contact-link" href="contact.php">Contact</a>					
+						<a id="contact-link" href="contact.php">Contact</a>
+						<a id="sign-in-link" href="sign_in.php">Sign In</a>					
 					</nav>
 				</div>
 			</div>
@@ -189,7 +190,7 @@
 								}																	
 							}
 							else { // If any fields are empty 
-								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check if you have filled all the form fields as required.</p></div>';
+								echo '<div class="error"><p class="error-text">Sorry, we could not process your request at this time. Please check that you have filled all the form fields as required.</p></div>';
 							}							
 							// Free up the resources
 							$dbc->free_result($result);
