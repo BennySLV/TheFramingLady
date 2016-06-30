@@ -29,6 +29,9 @@
 
 /**** LESS Variables ****/
 
+/* Header Font */
+@header-font: Anke Print;
+
 /* Form validation colours */
 @validation-pass-colour: rgba(95, 216, 14, 0.6);
 @validation-fail-colour: rgba(226, 19, 19, 0.6);
@@ -59,7 +62,7 @@
 #slogan {
 	float: right;
 	margin-top: 20px;
-	font-family: Anke Print;
+	font-family: @header-font;
 	font-size: 36px;
 	font-style: italic;
 	font-weight: bold;
@@ -70,7 +73,7 @@
 }
 
 #menu a {
-	font-family: Anke Print;	
+	font-family: @header-font;	
 	color: black;
 	text-decoration: none;
 	padding: 10px;
