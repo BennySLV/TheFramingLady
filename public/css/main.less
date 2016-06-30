@@ -3,12 +3,6 @@
 	All styling below will apply to all pages
 */
 
-/* Allena Script custom font */
-@font-face {
-	font-family: Alleana Script;
-	src: url(custom-fonts/Alleana Script.ttf);
-}
-
 /* Crab Regular custom font */
 @font-face {
 	font-family: Crab;
@@ -32,6 +26,13 @@
 	font-family: MontereyMediumFLF;
 	src: url(custom-fonts/MontereyMediumFLF.ttf);
 }
+
+/**** LESS Variables ****/
+
+/* Form validation colours */
+@validation-pass-colour: rgba(95, 216, 14, 0.6);
+@validation-fail-colour: rgba(226, 19, 19, 0.6);
+
 
 /* Standard design for all computer desktop/laptop screens */
 
@@ -116,29 +117,29 @@ textarea {
 }
 
 .fa-times {
-	color: rgba(226, 19, 19, 0.6);
+	color: @validation-fail-colour;
 }
 
 .fa-check {
-	color: rgba(95, 216, 14, 0.6);
+	color: @validation-pass-colour;
 }
 
 .validation-fail {
 	border-radius: 2px;
 	font-size: 12px;
-	background-color: rgba(226, 19, 19, 0.6);
+	background-color: @validation-fail-colour;
 	padding: 2px;
 }
 
 .validation-pass {
 	border-radius: 2px;
 	font-size: 12px;
-	background-color: rgba(95, 216, 14, 0.6);
+	background-color: @validation-pass-colour;
 	padding: 2px;
 }
 
 .success {
-	background-color: rgba(95, 216, 14, 0.6);
+	background-color: @validation-pass-colour;
 	width: 495px;
 	height: 50px;
 	border-radius: 10px;
@@ -146,7 +147,7 @@ textarea {
 }
 
 .error {
-	background-color: rgba(226, 19, 19, 0.6);
+	background-color: @validation-fail-colour;
 	width: 495px;
 	height: 50px;
 	border-radius: 10px;
@@ -172,18 +173,18 @@ textarea {
 }
 
 #reset-button:active {
-	background-color: rgba(95, 216, 14, 0.6);
+	background-color: @validation-pass-colour;
 }
 
 #submit-button {
 	border-radius: 15px;
 	font-size: 18px;
-	background-color: rgba(226, 19, 19, 0.6);
+	background-color: @validation-fail-colour;
 	margin-top: 10px;
 }
 
 #submit-button:active {
-	background-color: rgba(95, 216, 14, 0.6);
+	background-color: @validation-pass-colour;
 }
 
 #form-close-button {
@@ -195,7 +196,7 @@ textarea {
 }
 
 #form-close-button:active {
-	background-color: rgba(226, 19, 19, 0.6);
+	background-color: @validation-pass-colour;
 }
 
 #social-media a {

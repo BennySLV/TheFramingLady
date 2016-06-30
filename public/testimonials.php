@@ -4,23 +4,26 @@
 	<!-- Ensure proper rendering and touch zooming on mobile devices -->
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
 	
-	<!-- Latest compiled and minified CSS for Bootstrap-->
+	<!-- Latest compiled and minified CSS for Bootstrap -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+	<!-- Latest compiled JavaScript for Bootstrap -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<!-- Font Awesome Library -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
-	<!-- jQuery library -->
+	<!-- Custom CSS/LESS -->
+	<link rel="stylesheet/less" type="text/css" href="css/testimonials.less" />
+
+	<!-- LESS CDN -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
+
+	<!-- jQuery library CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
-	<!-- jQuery-UI library -->
+	<!-- jQuery-UI library CDN -->
 	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
-
-	<!-- Latest compiled JavaScript for Bootstrap-->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/testimonials.css" />
 
 	<!-- Custom JavaScript/jQuery -->
 	<script type="text/javascript" src="js/testimonials.js"></script>
@@ -50,7 +53,7 @@
 						<a id="portfolio-link" href="portfolio.php">Portfolio</a>
 						<a id="testimonials-link" href="testimonials.php">Testimonials</a>
 						<a id="contact-link" href="contact.php">Contact</a>
-						<a id="sign-in-link" href="sign_in.php">Sign In</a>					
+						<!-- <a id="sign-in-link" href="sign_in.php">Sign In</a>					 -->
 					</nav>
 				</div>
 			</div>

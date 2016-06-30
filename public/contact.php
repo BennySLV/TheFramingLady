@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 	<!-- Custom CSS/LESS -->
-	<link rel="stylesheet/less" type="text/css" href="css/about.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/contact.less" />
 
 	<!-- LESS CDN -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
@@ -24,6 +24,9 @@
 
 	<!-- jQuery-UI library CDN -->
 	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
+
+	<!-- Custom JavaScript/jQuery -->
+	<script type="text/javascript" src="js/contact.js"></script>
 
 	<!-- Site Icon -->
 	<link rel="icon" type="image/png" href="images/web-images/site-icon.png" />
@@ -50,7 +53,7 @@
 						<a id="portfolio-link" href="portfolio.php">Portfolio</a>
 						<a id="testimonial-link" href="testimonials.php">Testimonials</a>
 						<a id="contact-link" href="contact.php">Contact</a>
-						<a id="sign-in-link" href="sign_in.php">Sign In</a>
+						<!-- <a id="sign-in-link" href="sign_in.php">Sign In</a> -->
 					</nav>
 				</div>
 			</div>

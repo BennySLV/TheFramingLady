@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 	<!-- Custom CSS/LESS -->
-	<link rel="stylesheet/less" type="text/css" href="css/about.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/index.less" />
 
 	<!-- LESS CDN -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
@@ -50,7 +50,7 @@
 						<a id="portfolio-link" href="portfolio.php">Portfolio</a>
 						<a id="testimonial-link" href="testimonials.php">Testimonials</a>
 						<a id="contact-link" href="contact.php">Contact</a>
-						<a id="sign-in-link" href="sign_in.php">Sign In</a>
+						<!-- <a id="sign-in-link" href="sign_in.php">Sign In</a> -->
 					</nav>
 				</div>
 			</div>
