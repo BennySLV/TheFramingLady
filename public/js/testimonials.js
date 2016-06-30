@@ -163,17 +163,17 @@ $(function() {
 		if($.trim($commentsInput).length) {
 			if($commentsRegex.test($commentsInput)) {
 				$('#comments-flag').removeClass('fa fa-times').addClass('fa fa-check');
-				$('#comments-validation').removeClass('validation-fail').addClass('validation-pass').text(' Message is valid!');
+				$('#comments-validation').removeClass('validation-fail').addClass('validation-pass').text(' Comment(s) is valid!');
 			}
 			else { // If any illegal characters are found in the contact message
 				$('#comments-flag').removeClass('fa fa-check').addClass('fa fa-times');
-				$('#comments-validation').removeClass('validation-pass').addClass('validation-fail').text(' Message is not valid!');
+				$('#comments-validation').removeClass('validation-pass').addClass('validation-fail').text(' Comment(s) is not valid!');
 			}			
 		}
 		// If the input text-box is NOT empty then insert the "green tick" indicator
 		else {
 			$('#comments-flag').removeClass('fa fa-check').addClass('fa fa-times');
-			$('#comments-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter message!');
+			$('#comments-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter comment(s)!');
 		}
 	});
 	
