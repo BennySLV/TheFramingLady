@@ -1,0 +1,121 @@
+/* Import main.css file */
+@import url('main.css');
+
+/* Custom CSS for portfolio.html file */
+#portfolio-link {
+	font-weight: bold;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+.image-gallery {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.portfolio-image {
+	position: static;
+	
+	/* Responsive images */
+	max-width: 100%;
+	max-height: auto;
+}
+
+#img-3, #img-4, #img-5, #img-6 {
+	padding-top: 10px;
+}
+
+.more-info-panel {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 485px;
+	height: 30px;
+	max-width: 100%;
+	max-height: auto;
+	padding-left: 5px;
+	font-family: Arial;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.more-info-panel:active {
+	background-color: rgba(95, 216, 14, 0.45);
+}
+
+.description {
+	font-family: Crab;
+	position: relative;
+	bottom: 0px;
+	padding-top: 75px;
+	padding-left: 60px;
+	padding-right: 60px;
+	width: 485px;
+	height: 400px;
+	max-width: 100%;
+	max-height: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	border: 1px solid black;	
+}
+
+.close-button {
+	border: none;
+}
+
+.close-button:active {
+	background-color: rgba(226, 19, 19, 0.45);
+}
+
+.fa-times {
+	float: right;
+	position: static;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video-gallery {
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: inline-block;
+
+	/* Enable responsive design */
+	max-width: 100%;
+	max-height: auto;
+}
+
+#video-4, #video-5, #video-6, #video-7, #video-8, #video-9 {
+	/* Enable responsive design */
+	max-width: 100%;
+	max-height: auto;
+	margin: 0 auto;
+	padding: auto;
+}
+
+#video-1, #video-4, #video-7 {
+	/* Enable responsive design */
+	max-width: 100%;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+#video-2, #video-5, #video-8 {
+	/* Enable responsive design */
+	max-width: 100%;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+#video-3, #video-6, #video-9 {
+	/* Enable responsive design */
+	max-width: 100%;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+}
