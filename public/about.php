@@ -50,7 +50,7 @@
 						<a id="portfolio-link" href="portfolio.php">Portfolio</a>
 						<a id="testimonial-link" href="testimonials.php">Testimonials</a>
 						<a id="contact-link" href="contact.php">Contact</a>
-						<!-- <a id="sign-in-link" href="sign_in.php">Sign In</a> -->
+						<a id="register-link" href="register.php">Register</a>
 					</nav>
 				</div>
 			</div>
