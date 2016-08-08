@@ -199,36 +199,40 @@ $(function() {
 		// Flag to indicate that the "reset" was clicked
 		var $resetButtonClicked = $(this).data('clicked', true);
 
-		/* If the button was clicked AND if ALL input fields are filled 
-			when the page first loads then clear all input fields */
-		if($resetButtonClicked) {
-			$('#first-name').val("");
-			$('#surname').val("");
-			$('#email').val("");
-			$('#confirm-email').val("");
-			$('#message').val("");
-		}
+		// Confirm dialogue box to ask the user to reset the form:
+		var confirmReset = confirm("Are you sure you want to reset the form?");
+ 
+		/* If the reset button was clicked then confirm that the 
+			user wants to empty the fields  */
+		if($resetButtonClicked) {			
+			if(confirmReset) {
+				$('#first-name').val("");
+				$('#surname').val("");
+				$('#email').val("");
+				$('#message').val("");
 
-		// Flag all empty input fields appropriately
-		if($('#first-name').val("")) {
-			$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
-			$('#first-name-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter first name!');
-		}
-		if($('#surname').val("")) {
-			$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
-			$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter surname!');
-		}
-		if($('#email').val("")) {
-			$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
-			$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
-		}
-		if($('#confirm-email').val("")) {
-			$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
-			$('#confirm-email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
-		}
-		if($('#message').val("")) {
-			$('#message-flag').removeClass('fa fa-check').addClass('fa fa-times');
-			$('#message-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter message!');
+				// Flag all empty input fields appropriately
+				if($('#first-name').val("")) {
+					$('#first-name-flag').removeClass('fa fa-check').addClass('fa fa-times');
+					$('#first-name-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter first name!');
+				}
+				if($('#surname').val("")) {
+					$('#surname-flag').removeClass('fa fa-check').addClass('fa fa-times');
+					$('#surname-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter surname!');
+				}
+				if($('#email').val("")) {
+					$('#email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+					$('#email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
+				}
+				if($('#confirm-email').val("")) {
+					$('#confirm-email-flag').removeClass('fa fa-check').addClass('fa fa-times');
+					$('#confirm-email-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter email address!');
+				}
+				if($('#message').val("")) {
+					$('#message-flag').removeClass('fa fa-check').addClass('fa fa-times');
+					$('#message-validation').removeClass('validation-pass').addClass('validation-fail').text(' Please enter message!');
+				}
+			}			
 		}			
 	});
 
