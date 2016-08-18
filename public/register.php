@@ -14,11 +14,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 	<!-- Custom CSS/LESS -->
-	<link rel="stylesheet/less" type="text/css" href="css/register.less" />
-
-	<!-- LESS CDN -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/register.css" />
+	
 	<!-- jQuery library CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
@@ -64,6 +61,7 @@
 					<h1>Register</h1>
 					<h4>Welcome to The Framing Lady Club!</h4><br />
 					<p>To register, please fill in the following form.</p>
+					<p>Please note that you must be at least <b>18 years old</b> to register.</p>
 				</div>
 				<div class="col-sm-6">
 					<form id="register-form" action="register_result.php" method="post" autocomplete="off">
@@ -73,6 +71,7 @@
 							<div class="col-sm-6">								
 								<p><input id="first-name" type="text" name="firstName" placeholder="First Name" value="<?php if(isset($_POST['firstName'])) { echo $_POST['firstName']; } ?>" /> <span id="first-name-flag"><i aria-hidden="true"></i></span> <span id="first-name-validation"></span></p>
 								<p><input id="surname" type="text" name="surname" placeholder="Surname" value="<?php if(isset($_POST['surname'])) { echo $_POST['surname']; } ?>" /> <span id="surname-flag"><i aria-hidden="true"></i></span> <span id="surname-validation"></span></p>
+								<p><input id="dob" type="text" name="date_of_birth" placeholder="D.O.B (DD/MM/YYYY)" maxlength="10" autocomplete="off" value="<?php if(isset($_POST['date_of_birth'])) echo $_POST['date_of_birth']; ?>" /> <span id="dob-flag"><i aria-hidden="true"></i></span> <span id="dob-validation"></span></p>
 								<p><input id="email" type="email" name="email" placeholder="Email Address" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" /> <span id="email-flag"><i aria-hidden="true"></i></span> <span id="email-validation"></span></p>	
 							</div>
 							<div class="col-sm-6">														

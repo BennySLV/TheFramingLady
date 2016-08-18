@@ -14,10 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 	<!-- Custom CSS/LESS -->
-	<link rel="stylesheet/less" type="text/css" href="css/register.less" />
-
-	<!-- LESS CDN -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/register.css" />
 
 	<!-- jQuery library CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -73,6 +70,7 @@
 						// Form field Regular Expressions
 						$firstNameRegex = '/^[a-zA-Z -]{3,16}$/';
 						$surnameRegex = '/^[a-zA-Z -]{3,16}$/';
+						$dobRegex = '/^[0-3]?[0-9].[0-3]?[0-9].(?:[0-9]{2})?[0-9]{2}$/';
 						$emailRegex = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/';
 						$passwordRegex = '/^[a-z0-9_-]{6,18}$/';
 
@@ -80,12 +78,13 @@
 							- AND all fields contain suitable characters
 							- AND the two email addressed entered match
 						*/
-						if(!empty($_POST['firstName']) && !empty($_POST['surname']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirmPassword'])) {
-							if(preg_match($firstNameRegex, $_POST['firstName']) && preg_match($surnameRegex, $_POST['surname']) && preg_match($emailRegex, $_POST['email']) && preg_match($passwordRegex, $_POST['password']) && preg_match($passwordRegex, $_POST['confirmPassword'])) {
+						if(!empty($_POST['firstName']) && !empty($_POST['surname']) && !empty($_POST['date_of_birth']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirmPassword'])) {
+							if(preg_match($firstNameRegex, $_POST['firstName']) && preg_match($surnameRegex, $_POST['surname']) && preg_match($dobRegex, $_POST['date_of_birth']) && preg_match($emailRegex, $_POST['email']) && preg_match($passwordRegex, $_POST['password']) && preg_match($passwordRegex, $_POST['confirmPassword'])) {
 								if($_POST['password'] === $_POST['confirmPassword']) {
 									// Store all data entered
 									$firstName = $_POST['firstName'];
 									$surname = $_POST['surname'];
+									$dateofBirth = $_POST['date_of_birth'];
 									$email = $_POST['email'];
 									$password = $_POST['password'];
 									$confirmPassword = $_POST['confirmPassword'];
@@ -97,7 +96,7 @@
 									// If the user has NOT registered before
 									if($selectUserQueryResult->num_rows == 0) {
 										// Query to add new user to the database
-										$addUserQuery = "INSERT INTO users(first_name, surname, email, pass, registration_date) VALUES('$firstName', '$surname', '$email', SHA1('$confirmPassword'), NOW())";
+										$addUserQuery = "INSERT INTO users(first_name, surname, date_of_birth, email, pass, registration_date) VALUES('$firstName', '$surname', '$dateofBirth', '$email', SHA1('$confirmPassword'), NOW())";
 
 										// Run the query:
 										$addUserQueryResult = $dbc->query($addUserQuery);

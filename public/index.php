@@ -14,10 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 	<!-- Custom CSS/LESS -->
-	<link rel="stylesheet/less" type="text/css" href="css/index.less" />
-
-	<!-- LESS CDN -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
 
 	<!-- jQuery library CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
