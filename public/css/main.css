@@ -1,0 +1,276 @@
+/* Main CSS file for The Framing Lady website
+
+	All styling below will apply to all pages
+*/
+
+/* Crab Regular custom font */
+@font-face {
+	font-family: Crab;
+	src: url(custom-fonts/Crab.ttf);
+}
+
+/* Anke Print custom font */
+@font-face {
+	font-family: Anke Print;
+	src: url(custom-fonts/Anke_Print.ttf);
+}
+
+/* MontereyFLF custom-font */
+@font-face {
+	font-family: MontereyFLF;
+	src: url(custom-fonts/MontereyFLF.ttf);
+}
+
+/* MontereyFLF (medium) custom-font */
+@font-face {
+	font-family: MontereyMediumFLF;
+	src: url(custom-fonts/MontereyMediumFLF.ttf);
+}
+
+/* Standard design for all computer desktop/laptop screens */
+
+.jumbotron {
+	background-color: #F5F5F5;
+	border: 2px solid black;
+	border-radius: 20px;
+	font-size: 16px;
+}
+
+.jumbotron h1 {
+	font-family: MontereyMediumFLF;
+	font-size: 50px;
+}
+
+.jumbotron p {
+	font-size: 16px;
+}
+
+.panel-footer {
+	background-color: white;
+}
+
+#slogan {
+	float: right;
+	margin-top: 20px;
+	font-family: Anke Print;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#menu {
+	float: right;
+}
+
+#menu a {
+	font-family: Anke Print;	
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 18px;
+	display: inline;
+}
+
+#menu a:hover {
+	font-weight: bold;
+}
+
+#main-text {
+	float: right;
+	padding-top: 155px; 
+}
+
+#intro-text {
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+form {
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 3px 3px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#form-instructions {
+	font-size: 18px;
+}
+
+input:focus {
+	background-color: #F1F99B;
+}
+
+input {
+	font-size: 16px;
+}
+
+textarea {
+	font-size: 16px;
+}
+
+.fa-times {
+	color: rgba(226, 19, 19, 0.7);
+}
+
+.fa-check {
+	color: rgba(95, 216, 14, 0.7);
+}
+
+.validation-fail {
+	border-radius: 2px;
+	font-size: 12px;
+	background-color: rgba(95, 216, 14, 0.7);
+	padding: 2px;
+}
+
+.validation-pass {
+	border-radius: 2px;
+	font-size: 12px;
+	background-color: rgba(226, 19, 19, 0.7);
+	padding: 2px;
+}
+
+.success {
+	background-color: rgba(226, 19, 19, 0.7);
+	width: 495px;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.error {
+	background-color: rgba(95, 216, 14, 0.7);
+	width: 495px;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.success-text {
+	font-weight: bold;
+}
+
+.error-text {
+	font-weight: bold;
+}
+
+.mandatory-field {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#reset-button {
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+#reset-button:active {
+	background-color: rgba(226, 19, 19, 0.7);
+}
+
+#submit-button {
+	border-radius: 15px;
+	font-size: 18px;
+	background-color: rgba(95, 216, 14, 0.7);
+	margin-top: 10px;
+}
+
+#submit-button:active {
+	background-color: rgba(226, 19, 19, 0.7);
+}
+
+#form-close-button {
+	float: right;
+	border-radius: 15px;
+	color: black;
+	padding-bottom: 5px;
+	margin-top: 10px; 
+}
+
+#form-close-button:active {
+	background-color: rgba(226, 19, 19, 0.7);
+}
+
+#social-media a {
+	color: black;
+}
+
+#social-media a:hover {
+	color: rgba(122, 122, 122, 0.5)
+}
+
+#copyright {
+	float: left;
+	margin: bottom;
+}
+
+#credits {
+	float: right;
+}
+
+/* Responsive Design */
+
+/* Tablet landscape orientation */
+@media screen and (max-width: 1040px) {
+	#menu a {
+		display: inline;
+		float: left;
+	}
+}
+
+/* Tablet portrait orientation */
+@media screen and (max-width: 800px) {
+	#menu a {
+		display: inline-block;
+		float: left;
+	}
+}
+
+/* Smartphone landscape orientation */
+@media screen and (max-width: 768px) {
+	table {
+		margin: auto;
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	#menu a {
+		display: inline-block;
+		float: left;
+	}
+
+	#menu a:hover {
+		font-weight: normal;
+		text-decoration: none;
+	}
+
+	#menu a:active {
+		font-weight: bold;
+	}
+
+	#main-text {
+		padding-top: 0;
+	}
+}
+
+/* Smartphone portrait orientation */
+@media screen and (max-width: 500px) {	
+	#menu a {
+		display: block;
+		float: left;
+	}
+
+	a:hover {
+		font-weight: none;
+		text-decoration: none;
+	}
+
+	#menu a:active {
+		font-weight: bold;
+	}
+
+	#main-text {
+		padding-top: 0;
+	}
+}

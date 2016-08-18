@@ -1,0 +1,55 @@
+/* Import main.less file */
+@import url('main.css');
+
+/* Custom CSS for contact.html file */
+#contact-link {
+	font-weight: bold;
+}
+
+#business-location {
+	width: 1030px;
+	height: 450px;
+
+	/* Responsive design */
+	max-width: 100%;
+	max-height: auto;
+}
+
+#contact-form-button {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 500px;
+	height: 30px;
+	max-width: 100%;
+	max-height: auto;
+	margin-top: 40px;
+	padding-left: 5px;
+	font-family: Arial;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#contact-form-button:active {
+	background-color: rgba(95, 216, 14, 0.6);
+}
+
+#message {
+	max-width: 100%;
+	max-height: auto;
+	float: left;
+}
+
+#send-button {
+	border-radius: 15px;
+	font-size: 16px;
+	background-color: rgba(226, 19, 19, 0.6);	
+	margin-top: 10px;
+}
+
+#send-button:active {
+	background-color: rgba(95, 216, 14, 0.6);
+}
+
+#address {
+	font-size: 14px;
+}
