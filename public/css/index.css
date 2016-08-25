@@ -1,5 +1,5 @@
 /* Import main.less file */
-@import url('main.css');
+@import 'main.css';
 
 /* CSS associated with index.html file only */
 #index-link {

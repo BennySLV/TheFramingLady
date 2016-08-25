@@ -9,12 +9,6 @@
 	src: url(custom-fonts/Crab.ttf);
 }
 
-/* Anke Print custom font */
-@font-face {
-	font-family: Anke Print;
-	src: url(custom-fonts/Anke_Print.ttf);
-}
-
 /* MontereyFLF custom-font */
 @font-face {
 	font-family: MontereyFLF;
@@ -52,7 +46,7 @@
 #slogan {
 	float: right;
 	margin-top: 20px;
-	font-family: Anke Print;
+	font-family: MontereyFLF;
 	font-size: 36px;
 	font-style: italic;
 	font-weight: bold;
@@ -63,7 +57,7 @@
 }
 
 #menu a {
-	font-family: Anke Print;	
+	font-family: MontereyFLF;	
 	color: black;
 	text-decoration: none;
 	padding: 10px;
@@ -120,14 +114,14 @@ textarea {
 .validation-fail {
 	border-radius: 2px;
 	font-size: 12px;
-	background-color: rgba(95, 216, 14, 0.7);
+	background-color: rgba(226, 19, 19, 0.7);
 	padding: 2px;
 }
 
 .validation-pass {
 	border-radius: 2px;
 	font-size: 12px;
-	background-color: rgba(226, 19, 19, 0.7);
+	background-color: rgba(95, 216, 14, 0.7);
 	padding: 2px;
 }
 
@@ -172,7 +166,7 @@ textarea {
 #submit-button {
 	border-radius: 15px;
 	font-size: 18px;
-	background-color: rgba(95, 216, 14, 0.7);
+	background-color: rgba(226, 19, 19, 0.7);
 	margin-top: 10px;
 }
 
